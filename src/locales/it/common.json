@@ -1,0 +1,94 @@
+{
+  "actions": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "clear": "Cancella",
+    "back": "Indietro",
+    "retry": "Riprova",
+    "remove": "Rimuovi",
+    "create": "Crea",
+    "viewAll": "Vedi tutto",
+    "loading": "Caricamento…"
+  },
+  "status": {
+    "draft": "Bozza",
+    "pending_validation": "In attesa di verifica",
+    "pending_approval": "In attesa di approvazione",
+    "approved": "Approvato",
+    "rejected": "Rifiutato",
+    "expired": "Scaduto"
+  },
+  "classification": {
+    "public": "Pubblico",
+    "internal": "Interno",
+    "confidential": "Riservato",
+    "restricted": "Limitato"
+  },
+  "region": {
+    "NA": "Nord America",
+    "EMEA": "Europa",
+    "MEA": "Medio Oriente",
+    "APAC": "Asia-Pacifico",
+    "GLOBAL": "Globale"
+  },
+  "migration": {
+    "linked": "Collegato al sistema precedente",
+    "migrated": "Archiviato in GrowthGateway"
+  },
+  "count": {
+    "assets_one": "{{count}} contenuto",
+    "assets_other": "{{count}} contenuti",
+    "files_one": "{{count}} file",
+    "files_other": "{{count}} file",
+    "groups_one": "{{count}} gruppo",
+    "groups_other": "{{count}} gruppi"
+  },
+  "errors": {
+    "generic": "Qualcosa è andato storto.",
+    "notFoundOrNoAccess": "Questo contenuto non esiste oppure non hai accesso.",
+    "forbiddenHint": "Chiedi a un amministratore globale del marchio l'autorizzazione {{permission}}."
+  },
+  "toast": {
+    "saved": "Modifiche salvate.",
+    "uploaded_one": "Aggiunto {{count}} contenuto.",
+    "uploaded_other": "Aggiunti {{count}} contenuti.",
+    "downloadStarted": "Download di {{name}}",
+    "submitted": "Inviato per l'approvazione.",
+    "approved": "Approvato «{{title}}».",
+    "rejected": "Rifiutato «{{title}}».",
+    "validated": "Verifica completata: {{result}}.",
+    "generated": "Creato «{{title}}».",
+    "migrated": "Migrato in GrowthGateway.",
+    "deleted": "«{{title}}» eliminato.",
+    "deletedMany_one": "{{count}} contenuto eliminato.",
+    "deletedMany_other": "{{count}} contenuti eliminati.",
+    "categoryCreated": "Categoria «{{label}}» creata.",
+    "demoReset": "Dati demo ripristinati."
+  },
+  "login": {
+    "title": "Accedi a GrowthGateway",
+    "subtitle": "Un portale per ogni contenuto di Comms & Growth, in tutte le regioni e i sistemi precedenti.",
+    "choosePersona": "Continua con l'SSO aziendale come",
+    "personaHint": "L'accesso unico è simulato. Ogni identità ha gruppi e un livello di accesso diversi, quindi vede contenuti diversi.",
+    "redirecting": "Reindirizzamento a {{idp}}…",
+    "groups": "Gruppi",
+    "clearance": "Livello di accesso",
+    "external": "Esterno",
+    "failed": "Accesso non riuscito. Riprova."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "La pagina che cerchi non esiste.",
+    "home": "Vai alla panoramica"
+  },
+  "forbidden": {
+    "title": "Accesso negato",
+    "body": "I tuoi gruppi non danno accesso a questa pagina."
+  },
+  "yes": "Sì",
+  "no": "No",
+  "none": "Nessuno",
+  "notSet": "Non impostato",
+  "peopleHint": "Separa i nomi con una virgola."
+}

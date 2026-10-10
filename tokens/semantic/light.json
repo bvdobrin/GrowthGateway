@@ -1,0 +1,90 @@
+{
+  "color": {
+    "$type": "color",
+    "scheme": { "$type": "other", "$value": "light" },
+    "surface": {
+      "canvas": { "$value": "{palette.neutral.100}" },
+      "base": { "$value": "{palette.neutral.0}" },
+      "raised": { "$value": "{palette.neutral.0}" },
+      "sunken": { "$value": "{palette.neutral.150}" },
+      "hover": { "$value": "{palette.neutral.150}" },
+      "selected": { "$value": "{palette.brand.50}" },
+      "inverse": { "$value": "{palette.neutral.900}" },
+      "overlay": { "$value": "oklch(16% 0.016 260 / 0.45)" }
+    },
+    "text": {
+      "default": { "$value": "{palette.neutral.900}" },
+      "muted": { "$value": "{palette.neutral.600}" },
+      "subtle": { "$value": "{palette.neutral.500}" },
+      "inverse": { "$value": "{palette.neutral.50}" },
+      "on-accent": { "$value": "{palette.neutral.0}" },
+      "link": { "$value": "{palette.brand.700}" }
+    },
+    "border": {
+      "default": { "$value": "{palette.neutral.200}" },
+      "strong": { "$value": "{palette.neutral.300}" },
+      "focus": { "$value": "{palette.brand.500}" }
+    },
+    "accent": {
+      "default": { "$value": "{palette.brand.600}" },
+      "strong": { "$value": "{palette.brand.700}" },
+      "subtle": { "$value": "{palette.brand.50}" },
+      "text": { "$value": "{palette.brand.700}" }
+    },
+    "danger": {
+      "default": { "$value": "{palette.red.600}" },
+      "subtle": { "$value": "{palette.red.100}" },
+      "text": { "$value": "{palette.red.700}" }
+    },
+    "status": {
+      "draft": { "$value": "{palette.neutral.500}" },
+      "pending-validation": { "$value": "{palette.violet.600}" },
+      "pending-approval": { "$value": "{palette.amber.600}" },
+      "approved": { "$value": "{palette.green.600}" },
+      "rejected": { "$value": "{palette.red.600}" },
+      "expired": { "$value": "{palette.neutral.700}" }
+    },
+    "validation": {
+      "pass": { "$value": "{palette.green.600}" },
+      "warn": { "$value": "{palette.amber.600}" },
+      "fail": { "$value": "{palette.red.600}" }
+    },
+    "classification": {
+      "public": { "$value": "{palette.green.600}" },
+      "internal": { "$value": "{palette.brand.600}" },
+      "confidential": { "$value": "{palette.amber.700}" },
+      "restricted": { "$value": "{palette.red.700}" }
+    },
+    "group": {
+      "written": { "$value": "oklch(52% 0.15 255)" },
+      "visual": { "$value": "oklch(53% 0.13 155)" },
+      "media": { "$value": "oklch(54% 0.19 15)" },
+      "events": { "$value": "oklch(52% 0.1 190)" },
+      "brand": { "$value": "oklch(58% 0.14 70)" },
+      "custom": { "$value": "{palette.neutral.500}" }
+    },
+    "category": {
+      "report": { "$value": "oklch(52% 0.15 255)" },
+      "website-copy": { "$value": "oklch(54% 0.13 225)" },
+      "email": { "$value": "oklch(55% 0.11 200)" },
+      "memo": { "$value": "oklch(50% 0.15 280)" },
+      "press-release": { "$value": "oklch(50% 0.17 305)" },
+      "photograph": { "$value": "oklch(53% 0.13 155)" },
+      "illustration": { "$value": "oklch(56% 0.17 345)" },
+      "infographic": { "$value": "oklch(56% 0.12 125)" },
+      "advertisement": { "$value": "oklch(55% 0.19 27)" },
+      "promotional-material": { "$value": "oklch(60% 0.16 50)" },
+      "video": { "$value": "oklch(52% 0.19 5)" },
+      "meeting": { "$value": "oklch(52% 0.1 185)" },
+      "press-conference": { "$value": "oklch(52% 0.17 325)" },
+      "interview": { "$value": "oklch(55% 0.12 100)" },
+      "branding-material": { "$value": "oklch(58% 0.14 70)" }
+    }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "sm": { "$value": "0 1px 2px oklch(16% 0.02 260 / 0.08)" },
+    "md": { "$value": "0 2px 6px oklch(16% 0.02 260 / 0.08), 0 8px 24px oklch(16% 0.02 260 / 0.06)" },
+    "lg": { "$value": "0 12px 40px oklch(16% 0.02 260 / 0.18)" }
+  }
+}

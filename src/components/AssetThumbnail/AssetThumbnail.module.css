@@ -1,0 +1,9 @@
+@layer components {
+  .thumbnail {
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--color-surface-sunken);
+  }
+}

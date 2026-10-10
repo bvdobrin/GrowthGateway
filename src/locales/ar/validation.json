@@ -1,0 +1,179 @@
+{
+  "title": "الفحص",
+  "overall": {
+    "pass": "نجحت جميع الفحوص",
+    "warn": "نجح مع تحذيرات",
+    "fail": "فشلت بعض الفحوص"
+  },
+  "notRun": "لم يُفحص بعد. شغّل الفحص للتحقق من هذا الأصل وفق قواعد فئته.",
+  "checkedAt": "فُحص في {{date}}",
+  "summary": "{{pass}} ناجح · {{warn}} تحذير · {{fail}} فاشل",
+  "status": {
+    "pass": "ناجح",
+    "warn": "تحذير",
+    "fail": "فاشل"
+  },
+  "rules": {
+    "required-fields": "الحقول المطلوبة",
+    "naming-convention": "قواعد التسمية",
+    "format-allowed": "الصيغة المسموح بها",
+    "classification-set": "التصنيف والوصول",
+    "rights-not-expired": "حقوق الاستخدام",
+    "legacy-link": "التخزين",
+    "report-version-period": "الإصدار والفترة",
+    "meta-description-length": "طول الوصف التعريفي",
+    "no-broken-placeholders": "العناصر النائبة",
+    "email-unsubscribe": "رابط إلغاء الاشتراك",
+    "email-subject-length": "طول الموضوع",
+    "memo-not-public": "تصنيف المذكرة",
+    "pr-legal-signoff": "الموافقة القانونية",
+    "pr-embargo-future": "الحظر الزمني",
+    "pr-boilerplate-current": "إصدار النص التعريفي",
+    "photo-release": "إذن التصوير",
+    "photo-min-resolution": "الدقة",
+    "illustration-licence": "الترخيص",
+    "illustration-source-file": "الملف المصدر",
+    "infographic-sources": "مصادر البيانات",
+    "infographic-text-alt": "البديل النصي",
+    "infographic-data-fresh": "حداثة البيانات",
+    "ad-disclaimer": "إخلاء المسؤولية التنظيمي",
+    "ad-dimensions": "أبعاد الموضع",
+    "promo-print-specs": "مواصفات الطباعة",
+    "video-captions": "الترجمة المرئية",
+    "video-music-licence": "ترخيص الموسيقى",
+    "meeting-minutes": "المحضر",
+    "pc-transcript": "التفريغ النصي",
+    "pc-speakers": "المتحدثون",
+    "interview-consent": "الموافقة",
+    "brand-approved-version": "إصدار العلامة التجارية",
+    "brand-no-deprecated-palette": "لوحة الألوان"
+  },
+  "msg": {
+    "requiredFields": {
+      "pass": "تم ملء جميع الحقول المطلوبة.",
+      "fail": "ناقص: {{fields}}."
+    },
+    "naming": {
+      "pass": "العنوان واسم الملف يتبعان قواعد التسمية.",
+      "title": "أعد تسمية هذا الأصل: العناوين مثل «untitled» أو «copy of» أو «final final» غير مسموح بها.",
+      "fileName": "اسم الملف «{{name}}» يحتوي على مسافات أو هو اسم افتراضي للكاميرا. استخدم كلمات صغيرة موصولة بشرطات."
+    },
+    "format": {
+      "pass": "{{format}} مسموح به لهذه الفئة.",
+      "notAllowed": "{{format}} ليست صيغة مسموحًا بها لهذه الفئة.",
+      "noFile": "لا يوجد ملف مرفق.",
+      "mimeMismatch": "«{{name}}» لا يطابق صيغة الأصل."
+    },
+    "classification": {
+      "pass": "مصنّف {{classification}} ومشترك مع {{count}} مجموعة.",
+      "noGroups": "شارك مع مجموعة واحدة على الأقل."
+    },
+    "rights": {
+      "none": "لا يوجد تاريخ انتهاء لحقوق الاستخدام.",
+      "valid": "حقوق الاستخدام سارية حتى {{date}}.",
+      "expiringSoon": "تنتهي حقوق الاستخدام في {{date}}، خلال 30 يومًا.",
+      "expired": "انتهت حقوق الاستخدام في {{date}}. التنزيل محظور."
+    },
+    "legacy": {
+      "migrated": "مخزّن في GrowthGateway.",
+      "linked": "النسخة الأصلية لا تزال في {{source}}. رحّلها قبل أن يصبح النظام القديم للقراءة فقط."
+    },
+    "report": {
+      "pass": "تم تحديد الإصدار وفترة التقرير.",
+      "missing": "حدّد الإصدار وفترة التقرير."
+    },
+    "web": {
+      "metaOk": "طول الوصف التعريفي {{length}} من {{max}} حرفًا.",
+      "metaTooLong": "طول الوصف التعريفي {{length}} حرفًا؛ اجعله أقل من {{max}}.",
+      "metaMissing": "أضف وصفًا تعريفيًا.",
+      "noPlaceholders": "لا توجد عناصر نائبة غير مكتملة.",
+      "placeholders": "استبدل العنصر النائب {{sample}} قبل النشر."
+    },
+    "email": {
+      "unsubscribeNotNeeded": "جمهور داخلي: لا حاجة لرابط إلغاء الاشتراك.",
+      "unsubscribePresent": "رابط إلغاء الاشتراك موجود.",
+      "unsubscribeMissing": "تحتاج الرسائل الخارجية إلى رابط لإلغاء الاشتراك (العنصر unsubscribe_url).",
+      "subjectOk": "طول الموضوع {{length}} من {{max}} حرفًا.",
+      "subjectTooLong": "طول الموضوع {{length}} حرفًا؛ اجعله أقل من {{max}}."
+    },
+    "memo": {
+      "ok": "المذكرة غير مصنفة كعامة.",
+      "public": "المذكرات داخلية؛ لا تصنفها كعامة."
+    },
+    "pr": {
+      "legalOk": "تم الحصول على الموافقة القانونية.",
+      "legalMissing": "تحتاج البيانات الصحفية إلى موافقة قانونية.",
+      "noEmbargo": "لا يوجد حظر زمني.",
+      "embargoOk": "محظور حتى {{date}}.",
+      "embargoPast": "انقضى موعد الحظر {{date}} ولم يُعتمد البيان بعد.",
+      "boilerplateOk": "يستخدم النص التعريفي الحالي ({{version}}).",
+      "boilerplateOutdated": "يستخدم النص التعريفي {{version}}؛ الإصدار الحالي هو {{current}}.",
+      "boilerplateMissing": "حدّد إصدار النص التعريفي."
+    },
+    "photo": {
+      "noPeople": "لا يظهر أشخاص يمكن التعرف عليهم، فلا حاجة لإذن.",
+      "releaseOk": "يوجد إذن مسجّل للأشخاص الظاهرين.",
+      "releaseMissing": "يظهر أشخاص يمكن التعرف عليهم دون إذن مسجّل.",
+      "resOk": "الدقة {{width}}×{{height}}.",
+      "lowRes": "الدقة {{width}}×{{height}} أقل من الحد الأدنى {{min}} بكسل للضلع الأطول.",
+      "unknownRes": "الدقة غير معروفة؛ تحتاج الصور إلى {{min}} بكسل على الأقل للضلع الأطول."
+    },
+    "illustration": {
+      "licenceOk": "الترخيص مسجّل.",
+      "licenceMissing": "سجّل الترخيص.",
+      "sourceOk": "يتوفر ملف مصدر قابل للتعديل.",
+      "sourceMissing": "أرفق ملف المصدر متعدد الطبقات (AI أو PSD أو ما يماثلهما)."
+    },
+    "infographic": {
+      "sourcesOk": "مصادر البيانات مذكورة.",
+      "sourcesMissing": "اذكر مصادر البيانات.",
+      "textAltOk": "البديل النصي متوفر.",
+      "textAltMissing": "أضف بديلًا نصيًا لقارئات الشاشة.",
+      "dataFresh": "البيانات حتى {{date}}.",
+      "dataStale": "البيانات حتى {{date}} أقدم من 12 شهرًا.",
+      "dataDateMissing": "سجّل تاريخ صلاحية البيانات."
+    },
+    "ad": {
+      "disclaimerOk": "إخلاء المسؤولية التنظيمي موجود.",
+      "disclaimerMissing": "أضف إخلاء المسؤولية المطلوب في {{region}}.",
+      "dimensionsOk": "التصميم يطابق موضع {{expected}}.",
+      "dimensionMismatch": "التصميم بمقاس {{actual}} بينما الموضع {{expected}}.",
+      "dimensionsUnknown": "مقاس التصميم غير معروف لموضع {{expected}}.",
+      "dimensionsNotApplicable": "الموضع لا يُقاس بالبكسل."
+    },
+    "promo": {
+      "digital": "صيغة رقمية: لا حاجة لمواصفات الطباعة.",
+      "printOk": "جاهز للطباعة: تم ضبط الهامش الزائد وملف ألوان CMYK.",
+      "printSpecs": "تحتاج ملفات الطباعة إلى هامش زائد {{min}} مم على الأقل وملف ألوان CMYK (الهامش الحالي {{bleed}} مم)."
+    },
+    "video": {
+      "captionsOk": "ملف الترجمة المرئية مرفق.",
+      "captionsMissing": "أرفق ملف ترجمة مرئية (WebVTT).",
+      "musicOk": "ترخيص الموسيقى مسجّل.",
+      "musicMissing": "سجّل ترخيص الموسيقى."
+    },
+    "meeting": {
+      "upcoming": "لم يُعقد الاجتماع بعد.",
+      "minutesOk": "المحضر مرفق.",
+      "minutesMissing": "أرفق المحضر."
+    },
+    "pc": {
+      "transcriptOk": "التفريغ النصي مرفق.",
+      "transcriptPending": "أضف تفريغًا نصيًا بعد الفعالية.",
+      "transcriptMissing": "أرفق التفريغ النصي.",
+      "speakersOk": "المتحدثون مذكورون.",
+      "speakersMissing": "اذكر المتحدثين."
+    },
+    "interview": {
+      "consentOk": "الموافقة مسجّلة.",
+      "consentMissing": "سجّل موافقة الشخص الذي أُجريت معه المقابلة قبل الاستخدام."
+    },
+    "brand": {
+      "versionOk": "يستخدم العلامة التجارية {{version}}.",
+      "versionDeprecated": "يستخدم العلامة التجارية {{version}}؛ الإصدار المعتمد الوحيد هو {{current}}.",
+      "versionMissing": "حدّد إصدار العلامة التجارية (الحالي: {{current}}).",
+      "paletteOk": "يستخدم لوحة ألوان معتمدة.",
+      "paletteDeprecated": "لوحة الألوان {{palette}} متوقفة."
+    }
+  }
+}

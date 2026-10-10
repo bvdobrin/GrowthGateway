@@ -1,0 +1,179 @@
+{
+  "title": "Verifica",
+  "overall": {
+    "pass": "Tutti i controlli superati",
+    "warn": "Superata con avvisi",
+    "fail": "Alcuni controlli non sono stati superati"
+  },
+  "notRun": "Non ancora verificato. Esegui la verifica per controllare questo contenuto rispetto alle regole della sua categoria.",
+  "checkedAt": "Verificato il {{date}}",
+  "summary": "{{pass}} superati · {{warn}} avvisi · {{fail}} non superati",
+  "status": {
+    "pass": "Superato",
+    "warn": "Avviso",
+    "fail": "Non superato"
+  },
+  "rules": {
+    "required-fields": "Campi obbligatori",
+    "naming-convention": "Convenzione sui nomi",
+    "format-allowed": "Formato consentito",
+    "classification-set": "Classificazione e accesso",
+    "rights-not-expired": "Diritti d'uso",
+    "legacy-link": "Archiviazione",
+    "report-version-period": "Versione e periodo",
+    "meta-description-length": "Lunghezza della meta descrizione",
+    "no-broken-placeholders": "Segnaposto",
+    "email-unsubscribe": "Link di disiscrizione",
+    "email-subject-length": "Lunghezza dell'oggetto",
+    "memo-not-public": "Classificazione del memo",
+    "pr-legal-signoff": "Approvazione legale",
+    "pr-embargo-future": "Embargo",
+    "pr-boilerplate-current": "Versione del testo standard",
+    "photo-release": "Liberatoria di immagine o di proprietà",
+    "photo-min-resolution": "Risoluzione",
+    "illustration-licence": "Licenza",
+    "illustration-source-file": "File sorgente",
+    "infographic-sources": "Fonti dei dati",
+    "infographic-text-alt": "Alternativa testuale",
+    "infographic-data-fresh": "Aggiornamento dei dati",
+    "ad-disclaimer": "Avvertenza normativa",
+    "ad-dimensions": "Misure dell'inserzione",
+    "promo-print-specs": "Specifiche di stampa",
+    "video-captions": "Sottotitoli",
+    "video-music-licence": "Licenza musicale",
+    "meeting-minutes": "Verbale",
+    "pc-transcript": "Trascrizione",
+    "pc-speakers": "Relatori",
+    "interview-consent": "Consenso",
+    "brand-approved-version": "Versione del marchio",
+    "brand-no-deprecated-palette": "Tavolozza colori"
+  },
+  "msg": {
+    "requiredFields": {
+      "pass": "Tutti i campi obbligatori sono compilati.",
+      "fail": "Manca: {{fields}}."
+    },
+    "naming": {
+      "pass": "Titolo e nome file seguono la convenzione.",
+      "title": "Rinomina questo contenuto: titoli come «untitled», «copy of» o «final final» non sono ammessi.",
+      "fileName": "Il file «{{name}}» ha spazi o è un nome predefinito della fotocamera. Usa minuscole unite da trattini."
+    },
+    "format": {
+      "pass": "{{format}} è consentito per questa categoria.",
+      "notAllowed": "{{format}} non è consentito per questa categoria.",
+      "noFile": "Nessun file allegato.",
+      "mimeMismatch": "«{{name}}» non corrisponde al formato del contenuto."
+    },
+    "classification": {
+      "pass": "Classificato come {{classification}} e condiviso con {{count}} gruppo/i.",
+      "noGroups": "Condividi con almeno un gruppo."
+    },
+    "rights": {
+      "none": "Nessuna scadenza dei diritti d'uso registrata.",
+      "valid": "Diritti d'uso validi fino al {{date}}.",
+      "expiringSoon": "I diritti d'uso scadono il {{date}}, entro 30 giorni.",
+      "expired": "Diritti d'uso scaduti il {{date}}. I download sono bloccati."
+    },
+    "legacy": {
+      "migrated": "Archiviato in GrowthGateway.",
+      "linked": "L'originale è ancora in {{source}}. Migralo prima che il sistema precedente diventi di sola lettura."
+    },
+    "report": {
+      "pass": "Versione e periodo di riferimento sono impostati.",
+      "missing": "Indica sia la versione sia il periodo di riferimento."
+    },
+    "web": {
+      "metaOk": "La meta descrizione è di {{length}} caratteri su {{max}}.",
+      "metaTooLong": "La meta descrizione è di {{length}} caratteri; restare sotto {{max}}.",
+      "metaMissing": "Aggiungi una meta descrizione.",
+      "noPlaceholders": "Nessun segnaposto incompleto.",
+      "placeholders": "Sostituisci il segnaposto {{sample}} prima della pubblicazione."
+    },
+    "email": {
+      "unsubscribeNotNeeded": "Pubblico interno: non serve il link di disiscrizione.",
+      "unsubscribePresent": "Link di disiscrizione presente.",
+      "unsubscribeMissing": "Le email esterne richiedono un link di disiscrizione (il segnaposto unsubscribe_url).",
+      "subjectOk": "L'oggetto è di {{length}} caratteri su {{max}}.",
+      "subjectTooLong": "L'oggetto è di {{length}} caratteri; restare sotto {{max}}."
+    },
+    "memo": {
+      "ok": "Il memo non è classificato come pubblico.",
+      "public": "I memo sono interni; non classificarli come pubblici."
+    },
+    "pr": {
+      "legalOk": "Approvazione legale ricevuta.",
+      "legalMissing": "I comunicati richiedono l'approvazione legale.",
+      "noEmbargo": "Nessun embargo impostato.",
+      "embargoOk": "Embargo fino al {{date}}.",
+      "embargoPast": "L'embargo {{date}} è passato ma il comunicato non è approvato.",
+      "boilerplateOk": "Usa il testo standard attuale ({{version}}).",
+      "boilerplateOutdated": "Usa il testo standard {{version}}; la versione attuale è {{current}}.",
+      "boilerplateMissing": "Indica la versione del testo standard."
+    },
+    "photo": {
+      "noPeople": "Nessuna persona riconoscibile, quindi non serve una liberatoria.",
+      "releaseOk": "Liberatoria presente per le persone ritratte.",
+      "releaseMissing": "Ci sono persone riconoscibili, ma manca la liberatoria.",
+      "resOk": "Risoluzione {{width}}×{{height}}.",
+      "lowRes": "La risoluzione {{width}}×{{height}} è sotto il minimo di {{min}} px sul lato lungo.",
+      "unknownRes": "Risoluzione sconosciuta; le foto richiedono almeno {{min}} px sul lato lungo."
+    },
+    "illustration": {
+      "licenceOk": "Licenza registrata.",
+      "licenceMissing": "Registra la licenza.",
+      "sourceOk": "File sorgente modificabile disponibile.",
+      "sourceMissing": "Allega il file a livelli (AI, PSD o simile)."
+    },
+    "infographic": {
+      "sourcesOk": "Fonti dei dati citate.",
+      "sourcesMissing": "Cita le fonti dei dati.",
+      "textAltOk": "Alternativa testuale presente.",
+      "textAltMissing": "Aggiungi un'alternativa testuale per gli screen reader.",
+      "dataFresh": "Dati al {{date}}.",
+      "dataStale": "I dati al {{date}} hanno più di 12 mesi.",
+      "dataDateMissing": "Registra la data di validità dei dati."
+    },
+    "ad": {
+      "disclaimerOk": "Avvertenza normativa presente.",
+      "disclaimerMissing": "Aggiungi l'avvertenza richiesta in {{region}}.",
+      "dimensionsOk": "L'immagine corrisponde all'inserzione {{expected}}.",
+      "dimensionMismatch": "L'immagine è {{actual}}, ma l'inserzione è {{expected}}.",
+      "dimensionsUnknown": "Dimensione sconosciuta per l'inserzione {{expected}}.",
+      "dimensionsNotApplicable": "L'inserzione non è misurata in pixel."
+    },
+    "promo": {
+      "digital": "Formato digitale: le specifiche di stampa non servono.",
+      "printOk": "Pronto per la stampa: abbondanza e profilo CMYK impostati.",
+      "printSpecs": "I file di stampa richiedono almeno {{min}} mm di abbondanza e un profilo CMYK (l'abbondanza è {{bleed}} mm)."
+    },
+    "video": {
+      "captionsOk": "File di sottotitoli allegato.",
+      "captionsMissing": "Allega un file di sottotitoli (WebVTT).",
+      "musicOk": "Licenza musicale registrata.",
+      "musicMissing": "Registra la licenza musicale."
+    },
+    "meeting": {
+      "upcoming": "La riunione non si è ancora svolta.",
+      "minutesOk": "Verbale allegato.",
+      "minutesMissing": "Allega il verbale."
+    },
+    "pc": {
+      "transcriptOk": "Trascrizione allegata.",
+      "transcriptPending": "Aggiungi una trascrizione dopo l'evento.",
+      "transcriptMissing": "Allega la trascrizione.",
+      "speakersOk": "Relatori indicati.",
+      "speakersMissing": "Indica i relatori."
+    },
+    "interview": {
+      "consentOk": "Consenso in archivio.",
+      "consentMissing": "Registra il consenso della persona intervistata prima dell'uso."
+    },
+    "brand": {
+      "versionOk": "Usa il marchio {{version}}.",
+      "versionDeprecated": "Usa il marchio {{version}}; solo {{current}} è approvato.",
+      "versionMissing": "Indica la versione del marchio (attuale: {{current}}).",
+      "paletteOk": "Usa una tavolozza colori approvata.",
+      "paletteDeprecated": "La tavolozza {{palette}} è obsoleta."
+    }
+  }
+}

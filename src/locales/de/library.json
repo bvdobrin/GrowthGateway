@@ -1,0 +1,86 @@
+{
+  "title": "Mediathek",
+  "subtitle": "Alle Inhalte, auf die Sie zugreifen können, aus allen verbundenen Quellen.",
+  "searchLabel": "Inhalte suchen",
+  "searchPlaceholder": "Titel, Schlagwörter, Texte und Transkripte durchsuchen…",
+  "results_one": "{{count}} Ergebnis",
+  "results_other": "{{count}} Ergebnisse",
+  "sort": {
+    "label": "Sortierung",
+    "relevance": "Relevanz",
+    "newest": "Neueste",
+    "oldest": "Älteste",
+    "title": "Titel A–Z"
+  },
+  "view": {
+    "label": "Ansicht",
+    "grid": "Kacheln",
+    "list": "Liste"
+  },
+  "filters": {
+    "title": "Filter",
+    "open": "Filter",
+    "clear": "Filter zurücksetzen",
+    "active_one": "{{count}} aktiver Filter",
+    "active_other": "{{count}} aktive Filter",
+    "categories": "Kategorie",
+    "formats": "Format",
+    "regions": "Region",
+    "locales": "Inhaltssprache",
+    "campaigns": "Kampagne",
+    "sources": "Quellsystem",
+    "statuses": "Status",
+    "classifications": "Klassifizierung",
+    "businessUnits": "Geschäftsbereich",
+    "date": "Erstellt",
+    "from": "Von",
+    "to": "Bis",
+    "categoryFields": "Felder: {{category}}",
+    "showMore": "{{count}} weitere anzeigen",
+    "showLess": "Weniger anzeigen",
+    "showResults": "{{count}} Ergebnisse anzeigen"
+  },
+  "empty": {
+    "title": "Keine passenden Inhalte",
+    "body": "Weniger Filter oder andere Suchbegriffe versuchen. Sie sehen nur Inhalte, die mit Ihren Gruppen geteilt sind."
+  },
+  "columns": {
+    "title": "Titel",
+    "category": "Kategorie",
+    "region": "Region",
+    "status": "Status",
+    "source": "Quelle",
+    "created": "Erstellt"
+  },
+  "dashboard": {
+    "title": "Willkommen, {{name}}",
+    "subtitle": "Ihre Sicht auf {{count}} verbundene Quellen, gefiltert nach Ihren Berechtigungen.",
+    "kpis": {
+      "visible": "Inhalte, auf die Sie zugreifen können",
+      "migrated": "In GrowthGateway zentralisiert",
+      "pendingMine": "Wartet auf Ihre Freigabe",
+      "expiring": "Rechte, die in 45 Tagen auslaufen"
+    },
+    "sources": "Wo Ihre Inhalte liegen",
+    "sourcesHint": "Verknüpfte Inhalte bleiben im Altsystem, bis sie übernommen werden. Übernommene Inhalte liegen in GrowthGateway.",
+    "linked": "Verknüpft",
+    "migrated": "Übernommen",
+    "acquired": "Von {{company}}",
+    "categories": "Nach Typ stöbern",
+    "expiringSoon": "Nutzungsrechte laufen bald ab",
+    "noneExpiring": "In den nächsten 45 Tagen laufen keine Nutzungsrechte ab.",
+    "quickActions": "Schnellaktionen",
+    "recent": "Kürzlich aktualisiert"
+  },
+  "selection": {
+    "count_one": "{{count}} ausgewählt",
+    "count_other": "{{count}} ausgewählt",
+    "clear": "Auswahl aufheben",
+    "delete": "Auswahl löschen",
+    "select": "{{title}} auswählen",
+    "confirmTitle": "Ausgewählte Inhalte löschen?",
+    "confirmBody_one": "{{count}} Inhalt wird aus GrowthGateway entfernt. Das lässt sich nicht rückgängig machen.",
+    "confirmBody_other": "{{count}} Inhalte werden aus GrowthGateway entfernt. Das lässt sich nicht rückgängig machen.",
+    "confirm": "Auswahl löschen"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Library",
+  "subtitle": "Every asset you can access, from every connected source.",
+  "searchLabel": "Search assets",
+  "searchPlaceholder": "Search titles, tags, copy and transcripts…",
+  "results_one": "{{count}} result",
+  "results_other": "{{count}} results",
+  "sort": {
+    "label": "Sort",
+    "relevance": "Relevance",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "title": "Title A–Z"
+  },
+  "view": {
+    "label": "View",
+    "grid": "Grid",
+    "list": "List"
+  },
+  "filters": {
+    "title": "Filters",
+    "open": "Filters",
+    "clear": "Clear filters",
+    "active_one": "{{count}} active filter",
+    "active_other": "{{count}} active filters",
+    "categories": "Category",
+    "formats": "Format",
+    "regions": "Region",
+    "locales": "Content language",
+    "campaigns": "Campaign",
+    "sources": "Source system",
+    "statuses": "Status",
+    "classifications": "Classification",
+    "businessUnits": "Business unit",
+    "date": "Created",
+    "from": "From",
+    "to": "To",
+    "categoryFields": "{{category}} fields",
+    "showMore": "Show {{count}} more",
+    "showLess": "Show less",
+    "showResults": "Show {{count}} results"
+  },
+  "empty": {
+    "title": "No matching assets",
+    "body": "Try fewer filters or different keywords. You only see assets shared with your groups."
+  },
+  "columns": {
+    "title": "Title",
+    "category": "Category",
+    "region": "Region",
+    "status": "Status",
+    "source": "Source",
+    "created": "Created"
+  },
+  "dashboard": {
+    "title": "Welcome, {{name}}",
+    "subtitle": "Your view across {{count}} connected sources, filtered by your entitlements.",
+    "kpis": {
+      "visible": "Assets you can access",
+      "migrated": "Centralized in GrowthGateway",
+      "pendingMine": "Waiting for your approval",
+      "expiring": "Rights expiring within 45 days"
+    },
+    "sources": "Where your assets live",
+    "sourcesHint": "Linked assets stay in the legacy system until migrated. Migrated assets are stored in GrowthGateway.",
+    "linked": "Linked",
+    "migrated": "Migrated",
+    "acquired": "From {{company}}",
+    "categories": "Browse by type",
+    "expiringSoon": "Usage rights expiring soon",
+    "noneExpiring": "No usage rights expire in the next 45 days.",
+    "quickActions": "Quick actions",
+    "recent": "Recently updated"
+  },
+  "selection": {
+    "count_one": "{{count}} selected",
+    "count_other": "{{count}} selected",
+    "clear": "Clear selection",
+    "delete": "Delete selected",
+    "select": "Select {{title}}",
+    "confirmTitle": "Delete selected assets?",
+    "confirmBody_one": "{{count}} asset will be removed from GrowthGateway. This cannot be undone.",
+    "confirmBody_other": "{{count}} assets will be removed from GrowthGateway. This cannot be undone.",
+    "confirm": "Delete selected"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "fast": { "$value": "120ms" },
+      "base": { "$value": "200ms" },
+      "slow": { "$value": "320ms" }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "standard": { "$value": "cubic-bezier(0.2, 0, 0, 1)" },
+      "emphasized": { "$value": "cubic-bezier(0.3, 0, 0, 1.2)" }
+    }
+  },
+  "z": {
+    "$type": "number",
+    "base": { "$value": "0" },
+    "sticky": { "$value": "10" },
+    "dropdown": { "$value": "50" },
+    "overlay": { "$value": "100" },
+    "modal": { "$value": "200" },
+    "toast": { "$value": "300" }
+  }
+}

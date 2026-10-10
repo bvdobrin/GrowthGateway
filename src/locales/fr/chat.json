@@ -1,0 +1,33 @@
+{
+  "title": "Demander à GrowthGateway IA",
+  "subtitle": "Les réponses n'utilisent que les contenus accessibles à vos groupes.",
+  "mode": {
+    "mock": "Glean (simulé)",
+    "proxy": "Proxy Glean MCP"
+  },
+  "placeholder": "Posez une question sur des contenus, des campagnes ou une démarche…",
+  "inputLabel": "Votre question",
+  "send": "Envoyer",
+  "thinking": "Recherche dans vos contenus…",
+  "clear": "Nouvelle conversation",
+  "sources": "Sources",
+  "you": "Vous",
+  "assistant": "Assistant",
+  "empty": "Essayez par exemple :",
+  "suggestions": [
+    "Derniers communiqués de presse en Europe",
+    "Transcriptions d'interviews sur l'hydrogène",
+    "Photos du métro de Dubaï",
+    "Comment téléverser une vidéo ?"
+  ],
+  "answers": {
+    "help": "Je trouve les contenus auxquels vous avez accès dans toutes les sources connectées. Essayez :\n\n- **Derniers communiqués de presse en Europe**\n- **Transcriptions d'interviews sur l'hydrogène**\n- **Logos et charte graphique**\n\nJe peux aussi expliquer comment ajouter un contenu, le faire valider ou demander un accès.",
+    "howUpload": "Pour ajouter un contenu, ouvrez **Ajouter un contenu**. Vous pouvez :\n\n1. **Téléverser des fichiers** : déposez-les, choisissez une catégorie et qui peut y accéder.\n2. **Rédiger** : écrivez directement textes web, e-mails, notes ou communiqués.\n3. **Lier depuis une source historique** : référencez un élément resté dans SharePoint, Box, Dropbox, etc.\n\nLe contrôle s'exécute automatiquement à l'enregistrement.",
+    "howApprove": "Ouvrez le contenu, lancez le **contrôle**, corrigez les points en échec puis choisissez **Soumettre pour validation**. Les valideurs régionaux examinent les contenus de leur région, les administrateurs de marque globaux examinent tout.",
+    "howAccess": "Vous ne voyez que les contenus partagés avec l'un de vos groupes, dans la limite de votre habilitation. Si vous avez besoin d'un contenu, demandez à son propriétaire ou à un administrateur de marque global de le partager avec votre groupe.",
+    "none": "Je n'ai rien trouvé d'accessible pour vous qui corresponde à « {{query}} ». Essayez d'autres mots-clés, ou demandez à l'équipe propriétaire de le partager avec votre groupe.",
+    "found_one": "J'ai trouvé {{count}} contenu accessible :",
+    "found_other": "J'ai trouvé {{count}} contenus accessibles. Les plus pertinents :",
+    "permissionNote": "_Seuls les contenus partagés avec vos groupes sont inclus._"
+  }
+}

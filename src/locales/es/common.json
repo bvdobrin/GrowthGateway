@@ -1,0 +1,94 @@
+{
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "clear": "Borrar",
+    "back": "Atrás",
+    "retry": "Reintentar",
+    "remove": "Quitar",
+    "create": "Crear",
+    "viewAll": "Ver todo",
+    "loading": "Cargando…"
+  },
+  "status": {
+    "draft": "Borrador",
+    "pending_validation": "Pendiente de validación",
+    "pending_approval": "Pendiente de aprobación",
+    "approved": "Aprobado",
+    "rejected": "Rechazado",
+    "expired": "Caducado"
+  },
+  "classification": {
+    "public": "Público",
+    "internal": "Interno",
+    "confidential": "Confidencial",
+    "restricted": "Restringido"
+  },
+  "region": {
+    "NA": "Norteamérica",
+    "EMEA": "Europa",
+    "MEA": "Oriente Medio",
+    "APAC": "Asia-Pacífico",
+    "GLOBAL": "Global"
+  },
+  "migration": {
+    "linked": "Vinculado al sistema heredado",
+    "migrated": "Almacenado en GrowthGateway"
+  },
+  "count": {
+    "assets_one": "{{count}} activo",
+    "assets_other": "{{count}} activos",
+    "files_one": "{{count}} archivo",
+    "files_other": "{{count}} archivos",
+    "groups_one": "{{count}} grupo",
+    "groups_other": "{{count}} grupos"
+  },
+  "errors": {
+    "generic": "Algo ha fallado.",
+    "notFoundOrNoAccess": "Este activo no existe o no tienes acceso.",
+    "forbiddenHint": "Pide a un administrador global de marca el permiso {{permission}}."
+  },
+  "toast": {
+    "saved": "Cambios guardados.",
+    "uploaded_one": "Se ha añadido {{count}} activo.",
+    "uploaded_other": "Se han añadido {{count}} activos.",
+    "downloadStarted": "Descargando {{name}}",
+    "submitted": "Enviado para aprobación.",
+    "approved": "Se ha aprobado «{{title}}».",
+    "rejected": "Se ha rechazado «{{title}}».",
+    "validated": "Validación terminada: {{result}}.",
+    "generated": "Se ha creado «{{title}}».",
+    "migrated": "Migrado a GrowthGateway.",
+    "deleted": "Se ha eliminado «{{title}}».",
+    "deletedMany_one": "Se ha eliminado {{count}} activo.",
+    "deletedMany_other": "Se han eliminado {{count}} activos.",
+    "categoryCreated": "Categoría «{{label}}» creada.",
+    "demoReset": "Datos de demostración restaurados."
+  },
+  "login": {
+    "title": "Iniciar sesión en GrowthGateway",
+    "subtitle": "Un portal para cada activo de Comms & Growth, en todas las regiones y sistemas heredados.",
+    "choosePersona": "Continuar con el SSO corporativo como",
+    "personaHint": "El inicio de sesión único está simulado. Cada identidad tiene grupos y un nivel de acceso distintos, así que ve un conjunto distinto de activos.",
+    "redirecting": "Redirigiendo a {{idp}}…",
+    "groups": "Grupos",
+    "clearance": "Nivel de acceso",
+    "external": "Externo",
+    "failed": "Error al iniciar sesión. Inténtalo de nuevo."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "La página que buscas no existe.",
+    "home": "Ir al panel"
+  },
+  "forbidden": {
+    "title": "Acceso denegado",
+    "body": "Tus grupos no dan acceso a esta página."
+  },
+  "yes": "Sí",
+  "no": "No",
+  "none": "Ninguno",
+  "notSet": "Sin definir",
+  "peopleHint": "Separa los nombres con comas."
+}

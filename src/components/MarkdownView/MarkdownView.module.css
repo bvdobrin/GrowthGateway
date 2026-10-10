@@ -1,0 +1,67 @@
+@layer components {
+  .prose {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-inline-size: var(--size-prose-max);
+    line-height: var(--font-line-height-relaxed);
+    overflow-wrap: anywhere;
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      margin-block-start: var(--space-2);
+    }
+
+    & h2 {
+      font-size: var(--font-size-xl);
+    }
+
+    & h3 {
+      font-size: var(--font-size-lg);
+    }
+
+    & ul,
+    & ol {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      padding-inline-start: var(--space-6);
+    }
+
+    & blockquote {
+      padding-inline-start: var(--space-4);
+      border-inline-start: 3px solid var(--color-accent-default);
+      color: var(--color-text-muted);
+      font-style: italic;
+    }
+
+    & code {
+      padding-inline: 0.3em;
+      border-radius: var(--radius-sm);
+      background: var(--color-surface-sunken);
+    }
+  }
+
+  .compact {
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    line-height: var(--font-line-height-normal);
+
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      font-size: var(--font-size-sm);
+      margin-block-start: 0;
+    }
+
+    & ul,
+    & ol {
+      padding-inline-start: var(--space-5);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "actions": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "clear": "Effacer",
+    "back": "Retour",
+    "retry": "Réessayer",
+    "remove": "Retirer",
+    "create": "Créer",
+    "viewAll": "Tout voir",
+    "loading": "Chargement…"
+  },
+  "status": {
+    "draft": "Brouillon",
+    "pending_validation": "Contrôle en attente",
+    "pending_approval": "En attente de validation",
+    "approved": "Validé",
+    "rejected": "Refusé",
+    "expired": "Expiré"
+  },
+  "classification": {
+    "public": "Public",
+    "internal": "Interne",
+    "confidential": "Confidentiel",
+    "restricted": "Restreint"
+  },
+  "region": {
+    "NA": "Amérique du Nord",
+    "EMEA": "Europe",
+    "MEA": "Moyen-Orient",
+    "APAC": "Asie-Pacifique",
+    "GLOBAL": "Monde"
+  },
+  "migration": {
+    "linked": "Lié dans la source d'origine",
+    "migrated": "Stocké dans GrowthGateway"
+  },
+  "count": {
+    "assets_one": "{{count}} contenu",
+    "assets_other": "{{count}} contenus",
+    "files_one": "{{count}} fichier",
+    "files_other": "{{count}} fichiers",
+    "groups_one": "{{count}} groupe",
+    "groups_other": "{{count}} groupes"
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite.",
+    "notFoundOrNoAccess": "Ce contenu n'existe pas, ou vous n'y avez pas accès.",
+    "forbiddenHint": "Demandez à un administrateur de marque global si vous avez besoin du droit {{permission}}."
+  },
+  "toast": {
+    "saved": "Modifications enregistrées.",
+    "uploaded_one": "{{count}} contenu ajouté.",
+    "uploaded_other": "{{count}} contenus ajoutés.",
+    "downloadStarted": "Téléchargement de {{name}}",
+    "submitted": "Soumis pour validation.",
+    "approved": "« {{title}} » validé.",
+    "rejected": "« {{title}} » refusé.",
+    "validated": "Contrôle terminé : {{result}}.",
+    "generated": "« {{title}} » créé.",
+    "migrated": "Migré dans GrowthGateway.",
+    "deleted": "« {{title}} » supprimé.",
+    "deletedMany_one": "{{count}} contenu supprimé.",
+    "deletedMany_other": "{{count}} contenus supprimés.",
+    "categoryCreated": "Catégorie « {{label}} » créée.",
+    "demoReset": "Données de démo restaurées."
+  },
+  "login": {
+    "title": "Se connecter à GrowthGateway",
+    "subtitle": "Une seule passerelle vers tous les contenus Comms & Growth, dans toutes les régions et tous les systèmes historiques.",
+    "choosePersona": "Continuer avec le SSO de l'entreprise en tant que",
+    "personaHint": "L'authentification unique est simulée. Chaque identité a ses propres groupes et son niveau d'habilitation, et voit donc des contenus différents.",
+    "redirecting": "Redirection vers {{idp}}…",
+    "groups": "Groupes",
+    "clearance": "Habilitation",
+    "external": "Externe",
+    "failed": "Échec de la connexion. Réessayez."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "body": "La page demandée n'existe pas.",
+    "home": "Aller au tableau de bord"
+  },
+  "forbidden": {
+    "title": "Accès refusé",
+    "body": "Vos groupes ne donnent pas accès à cette page."
+  },
+  "yes": "Oui",
+  "no": "Non",
+  "none": "Aucune",
+  "notSet": "Non renseigné",
+  "peopleHint": "Séparez les noms par des virgules."
+}

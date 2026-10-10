@@ -1,0 +1,179 @@
+{
+  "title": "検証",
+  "overall": {
+    "pass": "すべての検証に合格",
+    "warn": "警告ありで合格",
+    "fail": "一部の検証が不合格"
+  },
+  "notRun": "まだ検証されていません。検証を実行して、カテゴリのルールに照らして確認してください。",
+  "checkedAt": "{{date}} に検証",
+  "summary": "合格 {{pass}} · 警告 {{warn}} · 不合格 {{fail}}",
+  "status": {
+    "pass": "合格",
+    "warn": "警告",
+    "fail": "不合格"
+  },
+  "rules": {
+    "required-fields": "必須項目",
+    "naming-convention": "命名規則",
+    "format-allowed": "許可された形式",
+    "classification-set": "機密区分とアクセス",
+    "rights-not-expired": "使用権",
+    "legacy-link": "保存先",
+    "report-version-period": "バージョンと対象期間",
+    "meta-description-length": "メタディスクリプションの長さ",
+    "no-broken-placeholders": "プレースホルダー",
+    "email-unsubscribe": "配信停止リンク",
+    "email-subject-length": "件名の長さ",
+    "memo-not-public": "社内メモの区分",
+    "pr-legal-signoff": "法務承認",
+    "pr-embargo-future": "解禁日時",
+    "pr-boilerplate-current": "定型文のバージョン",
+    "photo-release": "肖像権・財産権の許諾",
+    "photo-min-resolution": "解像度",
+    "illustration-licence": "ライセンス",
+    "illustration-source-file": "ソースファイル",
+    "infographic-sources": "データの出典",
+    "infographic-text-alt": "テキストによる代替",
+    "infographic-data-fresh": "データの鮮度",
+    "ad-disclaimer": "法定表記",
+    "ad-dimensions": "広告枠のサイズ",
+    "promo-print-specs": "印刷仕様",
+    "video-captions": "字幕",
+    "video-music-licence": "音楽ライセンス",
+    "meeting-minutes": "議事録",
+    "pc-transcript": "書き起こし",
+    "pc-speakers": "登壇者",
+    "interview-consent": "同意",
+    "brand-approved-version": "ブランドのバージョン",
+    "brand-no-deprecated-palette": "カラーパレット"
+  },
+  "msg": {
+    "requiredFields": {
+      "pass": "必須項目はすべて入力されています。",
+      "fail": "未入力: {{fields}}"
+    },
+    "naming": {
+      "pass": "タイトルとファイル名は命名規則に従っています。",
+      "title": "このアセットの名前を変更してください。「untitled」「copy of」「final final」などのタイトルは使用できません。",
+      "fileName": "ファイル名「{{name}}」にスペースが含まれているか、カメラの既定名です。小文字の単語をハイフンでつないでください。"
+    },
+    "format": {
+      "pass": "{{format}} はこのカテゴリで使用できます。",
+      "notAllowed": "{{format}} はこのカテゴリで使用できない形式です。",
+      "noFile": "ファイルが添付されていません。",
+      "mimeMismatch": "「{{name}}」はアセットの形式と一致しません。"
+    },
+    "classification": {
+      "pass": "{{classification}} に区分され、{{count}} 個のグループと共有されています。",
+      "noGroups": "1 つ以上のグループと共有してください。"
+    },
+    "rights": {
+      "none": "使用権の期限は記録されていません。",
+      "valid": "使用権は {{date}} まで有効です。",
+      "expiringSoon": "使用権は {{date}} に失効します（30 日以内）。",
+      "expired": "使用権は {{date}} に失効しました。ダウンロードはブロックされます。"
+    },
+    "legacy": {
+      "migrated": "GrowthGateway に保存されています。",
+      "linked": "オリジナルはまだ {{source}} にあります。旧システムが読み取り専用になる前に移行してください。"
+    },
+    "report": {
+      "pass": "バージョンと対象期間が設定されています。",
+      "missing": "バージョンと対象期間の両方を設定してください。"
+    },
+    "web": {
+      "metaOk": "メタディスクリプションは {{max}} 文字中 {{length}} 文字です。",
+      "metaTooLong": "メタディスクリプションが {{length}} 文字あります。{{max}} 文字未満にしてください。",
+      "metaMissing": "メタディスクリプションを追加してください。",
+      "noPlaceholders": "未完成のプレースホルダーはありません。",
+      "placeholders": "公開前にプレースホルダー {{sample}} を置き換えてください。"
+    },
+    "email": {
+      "unsubscribeNotNeeded": "社内向けのため配信停止リンクは不要です。",
+      "unsubscribePresent": "配信停止リンクがあります。",
+      "unsubscribeMissing": "社外向けメールには配信停止リンク（unsubscribe_url プレースホルダー）が必要です。",
+      "subjectOk": "件名は {{max}} 文字中 {{length}} 文字です。",
+      "subjectTooLong": "件名が {{length}} 文字あります。{{max}} 文字未満にしてください。"
+    },
+    "memo": {
+      "ok": "社内メモは公開区分になっていません。",
+      "public": "社内メモは社内向けです。公開区分にしないでください。"
+    },
+    "pr": {
+      "legalOk": "法務承認を取得済みです。",
+      "legalMissing": "プレスリリースには法務承認が必要です。",
+      "noEmbargo": "解禁日時は設定されていません。",
+      "embargoOk": "{{date}} まで公開禁止です。",
+      "embargoPast": "解禁日時 {{date}} を過ぎていますが、まだ承認されていません。",
+      "boilerplateOk": "最新の定型文（{{version}}）を使用しています。",
+      "boilerplateOutdated": "定型文 {{version}} を使用しています。最新版は {{current}} です。",
+      "boilerplateMissing": "定型文のバージョンを設定してください。"
+    },
+    "photo": {
+      "noPeople": "識別可能な人物がいないため、許諾は不要です。",
+      "releaseOk": "写っている人物の許諾が記録されています。",
+      "releaseMissing": "識別可能な人物が写っていますが、許諾が記録されていません。",
+      "resOk": "解像度 {{width}}×{{height}}",
+      "lowRes": "解像度 {{width}}×{{height}} は、長辺 {{min}} px の最低基準を下回っています。",
+      "unknownRes": "解像度が不明です。写真は長辺 {{min}} px 以上が必要です。"
+    },
+    "illustration": {
+      "licenceOk": "ライセンスが記録されています。",
+      "licenceMissing": "ライセンスを記録してください。",
+      "sourceOk": "編集可能なソースファイルがあります。",
+      "sourceMissing": "レイヤー付きのソースファイル（AI、PSD など）を添付してください。"
+    },
+    "infographic": {
+      "sourcesOk": "データの出典が記載されています。",
+      "sourcesMissing": "データの出典を記載してください。",
+      "textAltOk": "テキストによる代替があります。",
+      "textAltMissing": "スクリーンリーダー向けにテキストによる代替を追加してください。",
+      "dataFresh": "{{date}} 時点のデータです。",
+      "dataStale": "{{date}} 時点のデータは 12 か月以上前のものです。",
+      "dataDateMissing": "データの基準日を記録してください。"
+    },
+    "ad": {
+      "disclaimerOk": "法定表記があります。",
+      "disclaimerMissing": "{{region}} で必要な法定表記を追加してください。",
+      "dimensionsOk": "ビジュアルは {{expected}} の広告枠に合っています。",
+      "dimensionMismatch": "ビジュアルは {{actual}} ですが、広告枠は {{expected}} です。",
+      "dimensionsUnknown": "{{expected}} の広告枠に対するビジュアルのサイズが不明です。",
+      "dimensionsNotApplicable": "この広告枠はピクセル単位ではありません。"
+    },
+    "promo": {
+      "digital": "デジタル形式のため印刷仕様は不要です。",
+      "printOk": "入稿可能: 塗り足しと CMYK プロファイルが設定されています。",
+      "printSpecs": "印刷用ファイルには {{min}} mm 以上の塗り足しと CMYK プロファイルが必要です（現在の塗り足し: {{bleed}} mm）。"
+    },
+    "video": {
+      "captionsOk": "字幕ファイルが添付されています。",
+      "captionsMissing": "字幕ファイル（WebVTT）を添付してください。",
+      "musicOk": "音楽ライセンスが記録されています。",
+      "musicMissing": "音楽ライセンスを記録してください。"
+    },
+    "meeting": {
+      "upcoming": "会議はまだ開催されていません。",
+      "minutesOk": "議事録が添付されています。",
+      "minutesMissing": "議事録を添付してください。"
+    },
+    "pc": {
+      "transcriptOk": "書き起こしが添付されています。",
+      "transcriptPending": "イベント後に書き起こしを追加してください。",
+      "transcriptMissing": "書き起こしを添付してください。",
+      "speakersOk": "登壇者が記載されています。",
+      "speakersMissing": "登壇者を記載してください。"
+    },
+    "interview": {
+      "consentOk": "同意が記録されています。",
+      "consentMissing": "使用前にインタビュー対象者の同意を記録してください。"
+    },
+    "brand": {
+      "versionOk": "ブランド {{version}} を使用しています。",
+      "versionDeprecated": "ブランド {{version}} を使用しています。承認済みは {{current}} のみです。",
+      "versionMissing": "ブランドのバージョンを設定してください（現行: {{current}}）。",
+      "paletteOk": "承認済みのカラーパレットを使用しています。",
+      "paletteDeprecated": "{{palette}} パレットは廃止されています。"
+    }
+  }
+}

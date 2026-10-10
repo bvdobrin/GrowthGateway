@@ -1,0 +1,90 @@
+{
+  "actions": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "clear": "クリア",
+    "back": "戻る",
+    "retry": "再試行",
+    "remove": "削除",
+    "create": "作成",
+    "viewAll": "すべて表示",
+    "loading": "読み込み中…"
+  },
+  "status": {
+    "draft": "下書き",
+    "pending_validation": "検証待ち",
+    "pending_approval": "承認待ち",
+    "approved": "承認済み",
+    "rejected": "差し戻し",
+    "expired": "期限切れ"
+  },
+  "classification": {
+    "public": "公開",
+    "internal": "社内",
+    "confidential": "機密",
+    "restricted": "極秘"
+  },
+  "region": {
+    "NA": "北米",
+    "EMEA": "欧州",
+    "MEA": "中東",
+    "APAC": "アジア太平洋",
+    "GLOBAL": "グローバル"
+  },
+  "migration": {
+    "linked": "旧システムにリンク",
+    "migrated": "GrowthGateway に保存"
+  },
+  "count": {
+    "assets_other": "{{count}} 件のアセット",
+    "files_other": "{{count}} 個のファイル",
+    "groups_other": "{{count}} 個のグループ"
+  },
+  "errors": {
+    "generic": "問題が発生しました。",
+    "notFoundOrNoAccess": "このアセットは存在しないか、アクセス権がありません。",
+    "forbiddenHint": "{{permission}} 権限が必要な場合は、グローバルブランド管理者に依頼してください。"
+  },
+  "toast": {
+    "saved": "変更を保存しました。",
+    "uploaded_other": "{{count}} 件のアセットを追加しました。",
+    "downloadStarted": "{{name}} をダウンロードしています",
+    "submitted": "承認を申請しました。",
+    "approved": "「{{title}}」を承認しました。",
+    "rejected": "「{{title}}」を差し戻しました。",
+    "validated": "検証が完了しました: {{result}}",
+    "generated": "「{{title}}」を作成しました。",
+    "migrated": "GrowthGateway に移行しました。",
+    "deleted": "「{{title}}」を削除しました。",
+    "deletedMany_one": "{{count}} 件のアセットを削除しました。",
+    "deletedMany_other": "{{count}} 件のアセットを削除しました。",
+    "categoryCreated": "カテゴリ「{{label}}」を作成しました。",
+    "demoReset": "デモデータを復元しました。"
+  },
+  "login": {
+    "title": "GrowthGateway にサインイン",
+    "subtitle": "すべての地域とレガシーシステムにまたがる Comms & Growth アセットへの単一の入り口。",
+    "choosePersona": "企業 SSO で次のユーザーとして続行",
+    "personaHint": "シングルサインオンはモックです。ID ごとに IdP グループとクリアランスが異なるため、表示されるアセットも異なります。",
+    "redirecting": "{{idp}} にリダイレクトしています…",
+    "groups": "グループ",
+    "clearance": "クリアランス",
+    "external": "外部",
+    "failed": "サインインに失敗しました。もう一度お試しください。"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "body": "お探しのページは存在しません。",
+    "home": "ダッシュボードへ"
+  },
+  "forbidden": {
+    "title": "アクセスが拒否されました",
+    "body": "所属グループにはこのページへのアクセス権がありません。"
+  },
+  "yes": "はい",
+  "no": "いいえ",
+  "none": "なし",
+  "notSet": "未設定",
+  "peopleHint": "名前はカンマで区切ってください。"
+}

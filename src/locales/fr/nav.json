@@ -1,0 +1,38 @@
+{
+  "appName": "GrowthGateway",
+  "tagline": "Passerelle des contenus Comms & Growth",
+  "dashboard": "Tableau de bord",
+  "library": "Médiathèque",
+  "addAsset": "Ajouter un contenu",
+  "generate": "Générer",
+  "approvals": "Validations",
+  "audit": "Journal d'audit",
+  "taxonomy": "Taxonomie",
+  "assistant": "Demander à l'IA",
+  "menu": "Ouvrir le menu",
+  "closeMenu": "Fermer le menu",
+  "mainNav": "Navigation principale",
+  "skipToContent": "Aller au contenu",
+  "sections": {
+    "work": "Travail",
+    "governance": "Gouvernance"
+  },
+  "viewAs": "Voir en tant que",
+  "viewAsHint": "Prévisualiser les droits d'un autre profil.",
+  "viewingAs": "Affichage en tant que {{name}}",
+  "stopViewingAs": "Revenir à {{name}}",
+  "signedInAs": "Connecté en tant que {{name}}",
+  "signOut": "Se déconnecter",
+  "account": "Compte et paramètres",
+  "language": "Langue",
+  "theme": {
+    "label": "Thème",
+    "light": "clair",
+    "dark": "sombre",
+    "toggle": "Passer au thème {{mode}}",
+    "blue": "Bleu",
+    "lightModern": "Moderne clair"
+  },
+  "settings": "Réglages",
+  "demo": "Démo : SSO, IAM et tous les services sont simulés."
+}

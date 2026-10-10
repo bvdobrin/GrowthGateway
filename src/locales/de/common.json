@@ -1,0 +1,94 @@
+{
+  "actions": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "clear": "Leeren",
+    "back": "Zurück",
+    "retry": "Erneut versuchen",
+    "remove": "Entfernen",
+    "create": "Erstellen",
+    "viewAll": "Alle anzeigen",
+    "loading": "Wird geladen…"
+  },
+  "status": {
+    "draft": "Entwurf",
+    "pending_validation": "Prüfung ausstehend",
+    "pending_approval": "Freigabe ausstehend",
+    "approved": "Freigegeben",
+    "rejected": "Abgelehnt",
+    "expired": "Abgelaufen"
+  },
+  "classification": {
+    "public": "Öffentlich",
+    "internal": "Intern",
+    "confidential": "Vertraulich",
+    "restricted": "Eingeschränkt"
+  },
+  "region": {
+    "NA": "Nordamerika",
+    "EMEA": "Europa",
+    "MEA": "Naher Osten",
+    "APAC": "Asien-Pazifik",
+    "GLOBAL": "Global"
+  },
+  "migration": {
+    "linked": "Verknüpft mit Altsystem",
+    "migrated": "In GrowthGateway gespeichert"
+  },
+  "count": {
+    "assets_one": "{{count}} Inhalt",
+    "assets_other": "{{count}} Inhalte",
+    "files_one": "{{count}} Datei",
+    "files_other": "{{count}} Dateien",
+    "groups_one": "{{count}} Gruppe",
+    "groups_other": "{{count}} Gruppen"
+  },
+  "errors": {
+    "generic": "Etwas ist schiefgelaufen.",
+    "notFoundOrNoAccess": "Dieser Inhalt existiert nicht, oder Sie haben keinen Zugriff.",
+    "forbiddenHint": "Bitten Sie eine globale Markenadministration um die Berechtigung {{permission}}."
+  },
+  "toast": {
+    "saved": "Änderungen gespeichert.",
+    "uploaded_one": "{{count}} Inhalt hinzugefügt.",
+    "uploaded_other": "{{count}} Inhalte hinzugefügt.",
+    "downloadStarted": "{{name}} wird heruntergeladen",
+    "submitted": "Zur Freigabe eingereicht.",
+    "approved": "„{{title}}“ freigegeben.",
+    "rejected": "„{{title}}“ abgelehnt.",
+    "validated": "Prüfung abgeschlossen: {{result}}.",
+    "generated": "„{{title}}“ erstellt.",
+    "migrated": "Nach GrowthGateway übernommen.",
+    "deleted": "„{{title}}“ gelöscht.",
+    "deletedMany_one": "{{count}} Inhalt gelöscht.",
+    "deletedMany_other": "{{count}} Inhalte gelöscht.",
+    "categoryCreated": "Kategorie „{{label}}“ erstellt.",
+    "demoReset": "Demodaten wiederhergestellt."
+  },
+  "login": {
+    "title": "Bei GrowthGateway anmelden",
+    "subtitle": "Ein Portal für alle Inhalte von Comms & Growth, über alle Regionen und Altsysteme hinweg.",
+    "choosePersona": "Mit Unternehmens-SSO fortfahren als",
+    "personaHint": "Die Anmeldung ist simuliert. Jede Identität hat andere IdP-Gruppen und eine andere Freigabestufe und sieht daher andere Inhalte.",
+    "redirecting": "Weiterleitung zu {{idp}}…",
+    "groups": "Gruppen",
+    "clearance": "Freigabestufe",
+    "external": "Extern",
+    "failed": "Anmeldung fehlgeschlagen. Versuchen Sie es erneut."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "body": "Die gesuchte Seite gibt es nicht.",
+    "home": "Zur Übersicht"
+  },
+  "forbidden": {
+    "title": "Zugriff verweigert",
+    "body": "Ihre Gruppen haben keinen Zugriff auf diese Seite."
+  },
+  "yes": "Ja",
+  "no": "Nein",
+  "none": "Keine",
+  "notSet": "Nicht festgelegt",
+  "peopleHint": "Namen durch Kommas trennen."
+}

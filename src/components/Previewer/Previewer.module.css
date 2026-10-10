@@ -1,0 +1,110 @@
+@layer components {
+  .preview {
+    min-inline-size: 0;
+  }
+
+  .figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin: 0;
+  }
+
+  .image,
+  .media {
+    inline-size: 100%;
+    max-block-size: 70dvh;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    background: var(--color-surface-sunken);
+  }
+
+  .audio {
+    inline-size: 100%;
+  }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+
+  .fileName {
+    font-family: var(--font-family-mono);
+    overflow-wrap: anywhere;
+  }
+
+  .note {
+    margin-block-start: var(--space-1);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .textFrame {
+    max-block-size: 70dvh;
+    overflow-y: auto;
+    padding: var(--space-5);
+    border: var(--border-width-thin) solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-base);
+  }
+
+  .pre {
+    white-space: pre-wrap;
+    font-size: var(--font-size-sm);
+  }
+
+  .htmlFrame {
+    inline-size: 100%;
+    block-size: min(70dvh, 36rem);
+    border: var(--border-width-thin) solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    background: var(--palette-neutral-0);
+  }
+
+  .pdf {
+    inline-size: 100%;
+    block-size: min(75dvh, 48rem);
+    border-radius: var(--radius-md);
+  }
+
+  .cues {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: 0;
+    list-style: none;
+    font-size: var(--font-size-sm);
+
+    & li {
+      display: flex;
+      gap: var(--space-3);
+    }
+  }
+
+  .cueTime {
+    flex-shrink: 0;
+    font-family: var(--font-family-mono);
+    color: var(--color-text-subtle);
+    direction: ltr;
+  }
+
+  .tabLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: var(--font-line-height-tight);
+    padding-block: var(--space-1);
+  }
+
+  .tabFile {
+    max-inline-size: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-subtle);
+  }
+}

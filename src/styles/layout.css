@@ -1,0 +1,98 @@
+/* App shell: top bar + content below --bp-lg, persistent sidebar from --bp-lg up. */
+.l-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: var(--size-header) minmax(0, 1fr);
+  grid-template-areas:
+    'header'
+    'main';
+  min-block-size: 100dvh;
+
+  @media (--bp-lg) {
+    grid-template-columns: var(--size-sidebar) minmax(0, 1fr);
+    grid-template-areas:
+      'sidebar header'
+      'sidebar main';
+  }
+}
+
+.l-shell__header {
+  grid-area: header;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-sticky);
+}
+
+.l-shell__sidebar {
+  grid-area: sidebar;
+  display: none;
+
+  @media (--bp-lg) {
+    display: flex;
+    position: sticky;
+    inset-block-start: 0;
+    block-size: 100dvh;
+  }
+}
+
+.l-shell__main {
+  grid-area: main;
+  min-inline-size: 0;
+}
+
+.l-page {
+  inline-size: 100%;
+  max-inline-size: var(--size-content-max);
+  margin-inline: auto;
+  padding-block: var(--space-6) var(--space-12);
+  padding-inline: var(--space-4);
+
+  @media (--bp-md) {
+    padding-inline: var(--space-6);
+  }
+
+  @media (--bp-xl) {
+    padding-inline: var(--space-8);
+  }
+}
+
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-gap, var(--space-4));
+}
+
+.l-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cluster-gap, var(--space-2));
+}
+
+.l-auto-grid {
+  display: grid;
+  gap: var(--grid-gap, var(--space-4));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--grid-min, 16rem)), 1fr));
+}
+
+/* Two columns from --bp-md; children can span both with .l-span-full. */
+.l-form-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: minmax(0, 1fr);
+
+  @media (--bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  & > .l-span-full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Wide content (tables) scrolls inside its container rather than widening the page. */
+.l-scroll-x {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  max-inline-size: 100%;
+}

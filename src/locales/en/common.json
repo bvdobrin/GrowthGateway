@@ -1,0 +1,94 @@
+{
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "clear": "Clear",
+    "back": "Back",
+    "retry": "Try again",
+    "remove": "Remove",
+    "create": "Create",
+    "viewAll": "View all",
+    "loading": "Loading…"
+  },
+  "status": {
+    "draft": "Draft",
+    "pending_validation": "Pending validation",
+    "pending_approval": "Pending approval",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "expired": "Expired"
+  },
+  "classification": {
+    "public": "Public",
+    "internal": "Internal",
+    "confidential": "Confidential",
+    "restricted": "Restricted"
+  },
+  "region": {
+    "NA": "North America",
+    "EMEA": "Europe",
+    "MEA": "Middle East",
+    "APAC": "Asia-Pacific",
+    "GLOBAL": "Global"
+  },
+  "migration": {
+    "linked": "Linked in legacy source",
+    "migrated": "Stored in GrowthGateway"
+  },
+  "count": {
+    "assets_one": "{{count}} asset",
+    "assets_other": "{{count}} assets",
+    "files_one": "{{count}} file",
+    "files_other": "{{count}} files",
+    "groups_one": "{{count}} group",
+    "groups_other": "{{count}} groups"
+  },
+  "errors": {
+    "generic": "Something went wrong.",
+    "notFoundOrNoAccess": "This asset doesn't exist, or you don't have access to it.",
+    "forbiddenHint": "Ask a Global Brand Admin if you need the {{permission}} entitlement."
+  },
+  "toast": {
+    "saved": "Changes saved.",
+    "uploaded_one": "Added {{count}} asset.",
+    "uploaded_other": "Added {{count}} assets.",
+    "downloadStarted": "Downloading {{name}}",
+    "submitted": "Submitted for approval.",
+    "approved": "Approved \"{{title}}\".",
+    "rejected": "Rejected \"{{title}}\".",
+    "validated": "Validation finished: {{result}}.",
+    "generated": "Created \"{{title}}\".",
+    "migrated": "Migrated into GrowthGateway.",
+    "deleted": "Deleted \"{{title}}\".",
+    "deletedMany_one": "Deleted {{count}} asset.",
+    "deletedMany_other": "Deleted {{count}} assets.",
+    "categoryCreated": "Category \"{{label}}\" created.",
+    "demoReset": "Demo data restored."
+  },
+  "login": {
+    "title": "Sign in to GrowthGateway",
+    "subtitle": "One gateway to every Comms & Growth asset, across every region and legacy system.",
+    "choosePersona": "Continue with corporate SSO as",
+    "personaHint": "Single sign-on is mocked. Each identity carries different IdP groups and clearance, so each sees a different set of assets.",
+    "redirecting": "Redirecting to {{idp}}…",
+    "groups": "Groups",
+    "clearance": "Clearance",
+    "external": "External",
+    "failed": "Sign-in failed. Try again."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist.",
+    "home": "Go to dashboard"
+  },
+  "forbidden": {
+    "title": "Access denied",
+    "body": "Your groups don't grant access to this page."
+  },
+  "yes": "Yes",
+  "no": "No",
+  "none": "None",
+  "notSet": "Not set",
+  "peopleHint": "Separate names with commas."
+}

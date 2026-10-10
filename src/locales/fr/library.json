@@ -1,0 +1,86 @@
+{
+  "title": "Médiathèque",
+  "subtitle": "Tous les contenus auxquels vous avez accès, depuis toutes les sources connectées.",
+  "searchLabel": "Rechercher des contenus",
+  "searchPlaceholder": "Rechercher dans les titres, tags, textes et transcriptions…",
+  "results_one": "{{count}} résultat",
+  "results_other": "{{count}} résultats",
+  "sort": {
+    "label": "Trier",
+    "relevance": "Pertinence",
+    "newest": "Plus récents",
+    "oldest": "Plus anciens",
+    "title": "Titre A–Z"
+  },
+  "view": {
+    "label": "Affichage",
+    "grid": "Grille",
+    "list": "Liste"
+  },
+  "filters": {
+    "title": "Filtres",
+    "open": "Filtres",
+    "clear": "Effacer les filtres",
+    "active_one": "{{count}} filtre actif",
+    "active_other": "{{count}} filtres actifs",
+    "categories": "Catégorie",
+    "formats": "Format",
+    "regions": "Région",
+    "locales": "Langue du contenu",
+    "campaigns": "Campagne",
+    "sources": "Système source",
+    "statuses": "Statut",
+    "classifications": "Classification",
+    "businessUnits": "Division",
+    "date": "Créé",
+    "from": "Du",
+    "to": "Au",
+    "categoryFields": "Champs {{category}}",
+    "showMore": "Afficher {{count}} de plus",
+    "showLess": "Afficher moins",
+    "showResults": "Voir {{count}} résultats"
+  },
+  "empty": {
+    "title": "Aucun contenu correspondant",
+    "body": "Essayez moins de filtres ou d'autres mots-clés. Vous ne voyez que les contenus partagés avec vos groupes."
+  },
+  "columns": {
+    "title": "Titre",
+    "category": "Catégorie",
+    "region": "Région",
+    "status": "Statut",
+    "source": "Source",
+    "created": "Créé"
+  },
+  "dashboard": {
+    "title": "Bienvenue, {{name}}",
+    "subtitle": "Votre vue sur {{count}} sources connectées, filtrée selon vos droits.",
+    "kpis": {
+      "visible": "Contenus accessibles",
+      "migrated": "Centralisés dans GrowthGateway",
+      "pendingMine": "En attente de votre validation",
+      "expiring": "Droits expirant sous 45 jours"
+    },
+    "sources": "Où se trouvent vos contenus",
+    "sourcesHint": "Les contenus liés restent dans le système d'origine jusqu'à leur migration. Les contenus migrés sont stockés dans GrowthGateway.",
+    "linked": "Liés",
+    "migrated": "Migrés",
+    "acquired": "Issu de {{company}}",
+    "categories": "Parcourir par type",
+    "expiringSoon": "Droits d'utilisation bientôt expirés",
+    "noneExpiring": "Aucun droit d'utilisation n'expire dans les 45 prochains jours.",
+    "quickActions": "Actions rapides",
+    "recent": "Mis à jour récemment"
+  },
+  "selection": {
+    "count_one": "{{count}} sélectionné",
+    "count_other": "{{count}} sélectionnés",
+    "clear": "Effacer la sélection",
+    "delete": "Supprimer la sélection",
+    "select": "Sélectionner {{title}}",
+    "confirmTitle": "Supprimer les contenus sélectionnés ?",
+    "confirmBody_one": "{{count}} contenu sera retiré de GrowthGateway. Cette action est définitive.",
+    "confirmBody_other": "{{count}} contenus seront retirés de GrowthGateway. Cette action est définitive.",
+    "confirm": "Supprimer la sélection"
+  }
+}

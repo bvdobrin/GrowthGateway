@@ -1,0 +1,38 @@
+{
+  "appName": "GrowthGateway",
+  "tagline": "بوابة أصول الاتصال والنمو",
+  "dashboard": "لوحة المعلومات",
+  "library": "المكتبة",
+  "addAsset": "إضافة أصل",
+  "generate": "إنشاء",
+  "approvals": "الموافقات",
+  "audit": "سجل التدقيق",
+  "taxonomy": "التصنيف",
+  "assistant": "اسأل الذكاء الاصطناعي",
+  "menu": "فتح القائمة",
+  "closeMenu": "إغلاق القائمة",
+  "mainNav": "التنقل الرئيسي",
+  "skipToContent": "تخطَّ إلى المحتوى",
+  "sections": {
+    "work": "العمل",
+    "governance": "الحوكمة"
+  },
+  "viewAs": "العرض بصفة",
+  "viewAsHint": "معاينة صلاحيات ملف شخصي آخر.",
+  "viewingAs": "العرض بصفة {{name}}",
+  "stopViewingAs": "العودة إلى {{name}}",
+  "signedInAs": "مسجّل الدخول باسم {{name}}",
+  "signOut": "تسجيل الخروج",
+  "account": "الحساب والإعدادات",
+  "language": "اللغة",
+  "theme": {
+    "label": "المظهر",
+    "light": "الفاتح",
+    "dark": "الداكن",
+    "toggle": "التبديل إلى المظهر {{mode}}",
+    "blue": "أزرق",
+    "lightModern": "عصري فاتح"
+  },
+  "settings": "الإعدادات",
+  "demo": "عرض توضيحي: تسجيل الدخول الموحد وإدارة الهوية وجميع الخدمات محاكاة."
+}

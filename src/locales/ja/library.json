@@ -1,0 +1,84 @@
+{
+  "title": "ライブラリ",
+  "subtitle": "接続されたすべてのソースから、アクセスできるアセットを表示します。",
+  "searchLabel": "アセットを検索",
+  "searchPlaceholder": "タイトル、タグ、本文、書き起こしを検索…",
+  "results_other": "{{count}} 件",
+  "sort": {
+    "label": "並べ替え",
+    "relevance": "関連度",
+    "newest": "新しい順",
+    "oldest": "古い順",
+    "title": "タイトル順"
+  },
+  "view": {
+    "label": "表示",
+    "grid": "グリッド",
+    "list": "リスト"
+  },
+  "filters": {
+    "title": "フィルター",
+    "open": "フィルター",
+    "clear": "フィルターをクリア",
+    "active_other": "{{count}} 個のフィルターが有効",
+    "categories": "カテゴリ",
+    "formats": "形式",
+    "regions": "地域",
+    "locales": "コンテンツの言語",
+    "campaigns": "キャンペーン",
+    "sources": "ソースシステム",
+    "statuses": "ステータス",
+    "classifications": "機密区分",
+    "businessUnits": "事業部門",
+    "date": "作成日",
+    "from": "開始",
+    "to": "終了",
+    "categoryFields": "{{category}} の項目",
+    "showMore": "さらに {{count}} 件表示",
+    "showLess": "表示を減らす",
+    "showResults": "{{count}} 件の結果を表示"
+  },
+  "empty": {
+    "title": "一致するアセットがありません",
+    "body": "フィルターを減らすか、別のキーワードをお試しください。表示されるのは所属グループと共有されたアセットのみです。"
+  },
+  "columns": {
+    "title": "タイトル",
+    "category": "カテゴリ",
+    "region": "地域",
+    "status": "ステータス",
+    "source": "ソース",
+    "created": "作成日"
+  },
+  "dashboard": {
+    "title": "ようこそ、{{name}} さん",
+    "subtitle": "{{count}} 個の接続ソースを、あなたの権限に応じて表示しています。",
+    "kpis": {
+      "visible": "アクセスできるアセット",
+      "migrated": "GrowthGateway に集約済み",
+      "pendingMine": "あなたの承認待ち",
+      "expiring": "45 日以内に権利が失効"
+    },
+    "sources": "アセットの保存場所",
+    "sourcesHint": "リンクされたアセットは移行されるまで旧システムに残ります。移行済みのアセットは GrowthGateway に保存されます。",
+    "linked": "リンク",
+    "migrated": "移行済み",
+    "acquired": "{{company}} から",
+    "categories": "種類別に見る",
+    "expiringSoon": "まもなく失効する使用権",
+    "noneExpiring": "今後 45 日以内に失効する使用権はありません。",
+    "quickActions": "クイック操作",
+    "recent": "最近の更新"
+  },
+  "selection": {
+    "count_one": "{{count}} 件選択中",
+    "count_other": "{{count}} 件選択中",
+    "clear": "選択を解除",
+    "delete": "選択を削除",
+    "select": "{{title}} を選択",
+    "confirmTitle": "選択したアセットを削除しますか？",
+    "confirmBody_one": "{{count}} 件のアセットが GrowthGateway から削除されます。この操作は元に戻せません。",
+    "confirmBody_other": "{{count}} 件のアセットが GrowthGateway から削除されます。この操作は元に戻せません。",
+    "confirm": "選択を削除"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Ask GrowthGateway AI",
+  "subtitle": "Answers only use assets your groups can access.",
+  "mode": {
+    "mock": "Glean (mocked)",
+    "proxy": "Glean MCP proxy"
+  },
+  "placeholder": "Ask about assets, campaigns or how to do something…",
+  "inputLabel": "Your question",
+  "send": "Send",
+  "thinking": "Searching your assets…",
+  "clear": "New conversation",
+  "sources": "Sources",
+  "you": "You",
+  "assistant": "Assistant",
+  "empty": "Try one of these:",
+  "suggestions": [
+    "Latest EMEA press releases",
+    "Interview transcripts about hydrogen",
+    "Photos of the Dubai Metro",
+    "How do I upload a video?"
+  ],
+  "answers": {
+    "help": "I can find assets you have access to across every connected source. Try:\n\n- **Latest EMEA press releases**\n- **Interview transcripts about hydrogen**\n- **Logos and brand guidelines**\n\nI can also explain how to upload, get approval, or request access.",
+    "howUpload": "To add an asset, open **Add asset**. You can:\n\n1. **Upload files**: drop files, pick a category, and choose who can access them.\n2. **Write**: author website copy, emails, memos or press releases directly.\n3. **Link from legacy source**: register something that still lives in SharePoint, Box, Dropbox and so on.\n\nValidation runs automatically when you save.",
+    "howApprove": "Open the asset, run **validation**, fix any failing checks, then choose **Submit for approval**. Regional approvers review assets from their region, and Global Brand Admins review everything.",
+    "howAccess": "You only see assets shared with one of your groups, and only up to your clearance level. If you need something, ask its owner or a Global Brand Admin to share it with your group.",
+    "none": "I couldn't find anything you have access to that matches \"{{query}}\". Try other keywords, or ask the owning team to share it with your group.",
+    "found_one": "I found {{count}} asset you can access:",
+    "found_other": "I found {{count}} assets you can access. The most relevant:",
+    "permissionNote": "_Only assets shared with your groups are included._"
+  }
+}

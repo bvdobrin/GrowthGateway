@@ -1,0 +1,94 @@
+{
+  "title": "المكتبة",
+  "subtitle": "جميع الأصول التي يمكنك الوصول إليها، من كل المصادر المتصلة.",
+  "searchLabel": "البحث في الأصول",
+  "searchPlaceholder": "ابحث في العناوين والوسوم والنصوص والتفريغات النصية…",
+  "results_zero": "لا نتائج",
+  "results_one": "نتيجة واحدة",
+  "results_two": "نتيجتان",
+  "results_few": "{{count}} نتائج",
+  "results_many": "{{count}} نتيجة",
+  "results_other": "{{count}} نتيجة",
+  "sort": {
+    "label": "الترتيب",
+    "relevance": "الأكثر صلة",
+    "newest": "الأحدث",
+    "oldest": "الأقدم",
+    "title": "العنوان أبجديًا"
+  },
+  "view": {
+    "label": "طريقة العرض",
+    "grid": "شبكة",
+    "list": "قائمة"
+  },
+  "filters": {
+    "title": "عوامل التصفية",
+    "open": "التصفية",
+    "clear": "مسح عوامل التصفية",
+    "active_zero": "لا توجد عوامل تصفية",
+    "active_one": "عامل تصفية واحد",
+    "active_two": "عاملا تصفية",
+    "active_few": "{{count}} عوامل تصفية",
+    "active_many": "{{count}} عامل تصفية",
+    "active_other": "{{count}} عامل تصفية",
+    "categories": "الفئة",
+    "formats": "الصيغة",
+    "regions": "المنطقة",
+    "locales": "لغة المحتوى",
+    "campaigns": "الحملة",
+    "sources": "النظام المصدر",
+    "statuses": "الحالة",
+    "classifications": "التصنيف الأمني",
+    "businessUnits": "وحدة الأعمال",
+    "date": "تاريخ الإنشاء",
+    "from": "من",
+    "to": "إلى",
+    "categoryFields": "حقول {{category}}",
+    "showMore": "عرض {{count}} إضافية",
+    "showLess": "عرض أقل",
+    "showResults": "عرض النتائج ({{count}})"
+  },
+  "empty": {
+    "title": "لا توجد أصول مطابقة",
+    "body": "جرّب عوامل تصفية أقل أو كلمات مختلفة. لا ترى إلا الأصول المشتركة مع مجموعاتك."
+  },
+  "columns": {
+    "title": "العنوان",
+    "category": "الفئة",
+    "region": "المنطقة",
+    "status": "الحالة",
+    "source": "المصدر",
+    "created": "تاريخ الإنشاء"
+  },
+  "dashboard": {
+    "title": "مرحبًا، {{name}}",
+    "subtitle": "رؤيتك عبر {{count}} مصادر متصلة، مصفّاة حسب صلاحياتك.",
+    "kpis": {
+      "visible": "الأصول المتاحة لك",
+      "migrated": "مركزية في GrowthGateway",
+      "pendingMine": "بانتظار موافقتك",
+      "expiring": "حقوق تنتهي خلال 45 يومًا"
+    },
+    "sources": "أين توجد أصولك",
+    "sourcesHint": "تبقى الأصول المرتبطة في النظام القديم حتى ترحيلها. أما الأصول المرحّلة فتُخزَّن في GrowthGateway.",
+    "linked": "مرتبطة",
+    "migrated": "مرحّلة",
+    "acquired": "من {{company}}",
+    "categories": "التصفح حسب النوع",
+    "expiringSoon": "حقوق استخدام تنتهي قريبًا",
+    "noneExpiring": "لا تنتهي أي حقوق استخدام خلال الأيام الـ45 القادمة.",
+    "quickActions": "إجراءات سريعة",
+    "recent": "المحدَّثة مؤخرًا"
+  },
+  "selection": {
+    "count_one": "تم تحديد {{count}}",
+    "count_other": "تم تحديد {{count}}",
+    "clear": "إلغاء التحديد",
+    "delete": "حذف المحدد",
+    "select": "تحديد {{title}}",
+    "confirmTitle": "حذف الأصول المحددة؟",
+    "confirmBody_one": "سيُزال {{count}} أصل من GrowthGateway. لا يمكن التراجع عن هذا.",
+    "confirmBody_other": "سيُزال {{count}} من الأصول من GrowthGateway. لا يمكن التراجع عن هذا.",
+    "confirm": "حذف المحدد"
+  }
+}

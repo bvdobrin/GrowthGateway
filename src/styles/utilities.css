@@ -1,0 +1,61 @@
+.u-visually-hidden {
+  position: absolute !important;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.u-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-inline-size: 0;
+}
+
+.u-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.u-muted {
+  color: var(--color-text-muted);
+}
+
+.u-small {
+  font-size: var(--font-size-sm);
+}
+
+.u-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Directional icons (arrows, chevrons) mirror in right-to-left locales. */
+.u-flip-rtl:dir(rtl) {
+  transform: scaleX(-1);
+}
+
+.u-hide-below-md {
+  @media (--bp-md-below) {
+    display: none !important;
+  }
+}
+
+.u-hide-below-lg {
+  @media (--bp-lg-below) {
+    display: none !important;
+  }
+}
+
+.u-hide-from-lg {
+  @media (--bp-lg) {
+    display: none !important;
+  }
+}

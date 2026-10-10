@@ -1,0 +1,54 @@
+@layer components {
+  .wrap {
+    overflow-x: auto;
+    border: var(--border-width-thin) solid var(--color-border-default);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-base);
+  }
+
+  .table {
+    inline-size: 100%;
+    font-size: var(--font-size-sm);
+
+    & th {
+      padding-block: var(--space-2);
+      padding-inline: var(--space-3);
+      text-align: start;
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text-muted);
+      background: var(--color-surface-sunken);
+      white-space: nowrap;
+    }
+
+    & td {
+      padding-block: var(--space-2);
+      padding-inline: var(--space-3);
+      border-block-start: var(--border-width-thin) solid var(--color-border-default);
+      vertical-align: middle;
+    }
+
+    & tbody tr:hover {
+      background: var(--color-surface-hover);
+    }
+  }
+
+  .title {
+    font-weight: var(--font-weight-medium);
+    min-inline-size: 12rem;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .muted {
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+}

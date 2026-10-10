@@ -1,0 +1,38 @@
+{
+  "appName": "GrowthGateway",
+  "tagline": "Comms & Growth asset gateway",
+  "dashboard": "Dashboard",
+  "library": "Library",
+  "addAsset": "Add asset",
+  "generate": "Generate",
+  "approvals": "Approvals",
+  "audit": "Audit log",
+  "taxonomy": "Taxonomy",
+  "assistant": "Ask AI",
+  "menu": "Open menu",
+  "closeMenu": "Close menu",
+  "mainNav": "Main navigation",
+  "skipToContent": "Skip to content",
+  "sections": {
+    "work": "Work",
+    "governance": "Governance"
+  },
+  "viewAs": "View as",
+  "viewAsHint": "Preview another persona's entitlements.",
+  "viewingAs": "Viewing as {{name}}",
+  "stopViewingAs": "Back to {{name}}",
+  "signedInAs": "Signed in as {{name}}",
+  "signOut": "Sign out",
+  "account": "Account and settings",
+  "language": "Language",
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Switch to {{mode}} theme",
+    "blue": "Blue",
+    "lightModern": "Light Modern"
+  },
+  "settings": "Settings",
+  "demo": "Demo: SSO, IAM and every backend are mocked."
+}

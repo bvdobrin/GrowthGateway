@@ -1,0 +1,54 @@
+{
+  "space": {
+    "$type": "dimension",
+    "0": { "$value": "0" },
+    "px": { "$value": "1px" },
+    "1": { "$value": "0.25rem" },
+    "2": { "$value": "0.5rem" },
+    "3": { "$value": "0.75rem" },
+    "4": { "$value": "1rem" },
+    "5": { "$value": "1.25rem" },
+    "6": { "$value": "1.5rem" },
+    "8": { "$value": "2rem" },
+    "10": { "$value": "2.5rem" },
+    "12": { "$value": "3rem" },
+    "16": { "$value": "4rem" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "sm": { "$value": "0.25rem" },
+    "md": { "$value": "0.5rem" },
+    "lg": { "$value": "0.75rem" },
+    "xl": { "$value": "1rem" },
+    "full": { "$value": "9999px" }
+  },
+  "border": {
+    "$type": "dimension",
+    "width": {
+      "thin": { "$value": "1px" },
+      "thick": { "$value": "2px" }
+    }
+  },
+  "bp": {
+    "$type": "dimension",
+    "$description": "Layout breakpoints. Also emitted as @custom-media --bp-* for media queries.",
+    "sm": { "$value": "30rem" },
+    "md": { "$value": "48rem" },
+    "lg": { "$value": "64rem" },
+    "xl": { "$value": "80rem" }
+  },
+  "size": {
+    "$type": "dimension",
+    "touch": { "$value": "2.75rem", "$description": "Minimum touch target" },
+    "control": { "$value": "2.5rem" },
+    "control-sm": { "$value": "2rem" },
+    "icon": { "$value": "1.125rem" },
+    "icon-sm": { "$value": "1rem" },
+    "header": { "$value": "3.5rem" },
+    "sidebar": { "$value": "16rem" },
+    "filters": { "$value": "17rem" },
+    "chat-panel": { "$value": "26rem" },
+    "content-max": { "$value": "90rem" },
+    "prose-max": { "$value": "68ch" }
+  }
+}

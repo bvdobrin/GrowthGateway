@@ -1,0 +1,86 @@
+{
+  "title": "Biblioteca",
+  "subtitle": "Todos los activos a los que puedes acceder, de todas las fuentes conectadas.",
+  "searchLabel": "Buscar activos",
+  "searchPlaceholder": "Busca títulos, etiquetas, textos y transcripciones…",
+  "results_one": "{{count}} resultado",
+  "results_other": "{{count}} resultados",
+  "sort": {
+    "label": "Orden",
+    "relevance": "Relevancia",
+    "newest": "Más recientes",
+    "oldest": "Más antiguos",
+    "title": "Título A–Z"
+  },
+  "view": {
+    "label": "Vista",
+    "grid": "Cuadrícula",
+    "list": "Lista"
+  },
+  "filters": {
+    "title": "Filtros",
+    "open": "Filtros",
+    "clear": "Quitar filtros",
+    "active_one": "{{count}} filtro activo",
+    "active_other": "{{count}} filtros activos",
+    "categories": "Categoría",
+    "formats": "Formato",
+    "regions": "Región",
+    "locales": "Idioma del contenido",
+    "campaigns": "Campaña",
+    "sources": "Sistema de origen",
+    "statuses": "Estado",
+    "classifications": "Clasificación",
+    "businessUnits": "Unidad de negocio",
+    "date": "Creado",
+    "from": "Desde",
+    "to": "Hasta",
+    "categoryFields": "Campos de {{category}}",
+    "showMore": "Mostrar {{count}} más",
+    "showLess": "Mostrar menos",
+    "showResults": "Mostrar {{count}} resultados"
+  },
+  "empty": {
+    "title": "Ningún activo coincide",
+    "body": "Prueba con menos filtros u otras palabras. Solo ves los activos compartidos con tus grupos."
+  },
+  "columns": {
+    "title": "Título",
+    "category": "Categoría",
+    "region": "Región",
+    "status": "Estado",
+    "source": "Origen",
+    "created": "Creado"
+  },
+  "dashboard": {
+    "title": "Hola, {{name}}",
+    "subtitle": "Tu vista de {{count}} fuentes conectadas, filtrada por tus permisos.",
+    "kpis": {
+      "visible": "Activos a los que puedes acceder",
+      "migrated": "Centralizados en GrowthGateway",
+      "pendingMine": "Esperan tu aprobación",
+      "expiring": "Derechos que caducan en 45 días"
+    },
+    "sources": "Dónde están tus activos",
+    "sourcesHint": "Los activos vinculados siguen en el sistema heredado hasta que se migran. Los migrados se guardan en GrowthGateway.",
+    "linked": "Vinculados",
+    "migrated": "Migrados",
+    "acquired": "De {{company}}",
+    "categories": "Explorar por tipo",
+    "expiringSoon": "Derechos de uso que caducan pronto",
+    "noneExpiring": "Ningún derecho de uso caduca en los próximos 45 días.",
+    "quickActions": "Acciones rápidas",
+    "recent": "Actualizados recientemente"
+  },
+  "selection": {
+    "count_one": "{{count}} seleccionado",
+    "count_other": "{{count}} seleccionados",
+    "clear": "Quitar selección",
+    "delete": "Eliminar selección",
+    "select": "Seleccionar {{title}}",
+    "confirmTitle": "¿Eliminar los activos seleccionados?",
+    "confirmBody_one": "Se eliminará {{count}} activo de GrowthGateway. Esta acción no se puede deshacer.",
+    "confirmBody_other": "Se eliminarán {{count}} activos de GrowthGateway. Esta acción no se puede deshacer.",
+    "confirm": "Eliminar selección"
+  }
+}

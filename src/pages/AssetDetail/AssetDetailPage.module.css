@@ -1,0 +1,233 @@
+@layer components {
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    min-block-size: var(--size-touch);
+    margin-block-end: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-decoration: none;
+
+    & svg {
+      inline-size: 1rem;
+      block-size: 1rem;
+    }
+
+    &:hover {
+      color: var(--color-text-default);
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-block-end: var(--space-5);
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .title {
+    max-inline-size: 48ch;
+  }
+
+  .description {
+    max-inline-size: var(--size-prose-max);
+    color: var(--color-text-muted);
+  }
+
+  /* Action buttons wrap and keep a touch-sized hit area. */
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-block-start: var(--space-1);
+
+    & > button,
+    & > a {
+      min-block-size: var(--size-touch);
+    }
+  }
+
+  .deleteAction {
+    margin-inline-start: auto;
+  }
+
+  .blocked {
+    font-size: var(--font-size-sm);
+    color: var(--color-danger-text);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    inline-size: 100%;
+    min-block-size: var(--size-touch);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    text-align: start;
+    font-size: var(--font-size-sm);
+
+    &:first-child {
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-2);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    & svg {
+      inline-size: 1rem;
+      block-size: 1rem;
+    }
+
+    &:hover {
+      background: var(--color-surface-hover);
+    }
+  }
+
+  .menuRole {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-subtle);
+  }
+
+  .linked {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin-block-end: var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: color-mix(in oklch, var(--color-status-pending-approval) 12%, transparent);
+    font-size: var(--font-size-sm);
+
+    & > svg {
+      inline-size: 1.1rem;
+      block-size: 1.1rem;
+      flex-shrink: 0;
+      margin-block-start: 0.15rem;
+    }
+  }
+
+  .path {
+    display: block;
+    margin-block-start: var(--space-1);
+    font-size: var(--font-size-xs);
+    overflow-wrap: anywhere;
+    text-align: start;
+  }
+
+  /* Preview stacks above details below --bp-lg, and sits beside them from there up. */
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+
+    @media (--bp-lg) {
+      grid-template-columns: minmax(0, 1.6fr) minmax(20rem, 1fr);
+      align-items: start;
+    }
+  }
+
+  .main,
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    min-inline-size: 0;
+  }
+
+  .subheading {
+    margin-block-start: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+
+  .groupList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+
+    & li {
+      padding-inline: var(--space-2);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface-sunken);
+      font-size: var(--font-size-xs);
+    }
+  }
+
+  .groupMatched {
+    outline: var(--border-width-thin) solid var(--color-accent-default);
+    color: var(--color-accent-text);
+  }
+
+  .accessNote {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+
+  .comment {
+    padding-inline-start: var(--space-3);
+    border-inline-start: 3px solid var(--color-border-strong);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .lineageRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+
+    & svg {
+      inline-size: 1rem;
+      block-size: 1rem;
+      flex-shrink: 0;
+      margin-block-start: 0.2rem;
+    }
+  }
+
+  .variantList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+
+    & li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-2);
+    }
+  }
+
+  .editForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .editHeading {
+    margin-block-end: var(--space-3);
+    font-size: var(--font-size-md);
+  }
+}

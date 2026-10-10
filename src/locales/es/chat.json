@@ -1,0 +1,33 @@
+{
+  "title": "Preguntar a la IA de GrowthGateway",
+  "subtitle": "Las respuestas solo usan activos a los que pueden acceder tus grupos.",
+  "mode": {
+    "mock": "Glean (simulado)",
+    "proxy": "Proxy de Glean MCP"
+  },
+  "placeholder": "Pregunta por activos, campañas o cómo hacer algo…",
+  "inputLabel": "Tu pregunta",
+  "send": "Enviar",
+  "thinking": "Buscando en tus activos…",
+  "clear": "Nueva conversación",
+  "sources": "Fuentes",
+  "you": "Tú",
+  "assistant": "Asistente",
+  "empty": "Prueba una de estas:",
+  "suggestions": [
+    "Últimos comunicados de prensa de Europa",
+    "Transcripciones de entrevistas sobre hidrógeno",
+    "Fotos del metro de Dubái",
+    "¿Cómo subo un vídeo?"
+  ],
+  "answers": {
+    "help": "Puedo encontrar activos a los que tienes acceso en todas las fuentes conectadas. Prueba:\n\n- **Últimos comunicados de prensa de Europa**\n- **Transcripciones de entrevistas sobre hidrógeno**\n- **Logotipos y guías de marca**\n\nTambién puedo explicar cómo subir, obtener una aprobación o pedir acceso.",
+    "howUpload": "Para añadir un activo, abre **Añadir activo**. Puedes:\n\n1. **Subir archivos**: suelta archivos, elige una categoría y decide quién puede acceder.\n2. **Escribir**: redacta textos web, correos, notas o comunicados directamente.\n3. **Vincular desde un sistema heredado**: registra algo que sigue en SharePoint, Box, Dropbox y similares.\n\nLa validación se ejecuta sola al guardar.",
+    "howApprove": "Abre el activo, ejecuta la **validación**, corrige lo que falle y elige **Enviar para aprobación**. Quienes aprueban en la región revisan los activos de su región, y los administradores globales de marca revisan todo.",
+    "howAccess": "Solo ves activos compartidos con uno de tus grupos, y solo hasta tu nivel de acceso. Si necesitas algo, pide a su responsable o a un administrador global de marca que lo comparta con tu grupo.",
+    "none": "No he encontrado nada a lo que tengas acceso que coincida con «{{query}}». Prueba otras palabras o pide al equipo responsable que lo comparta con tu grupo.",
+    "found_one": "He encontrado {{count}} activo al que puedes acceder:",
+    "found_other": "He encontrado {{count}} activos a los que puedes acceder. Los más relevantes:",
+    "permissionNote": "_Solo se incluyen activos compartidos con tus grupos._"
+  }
+}

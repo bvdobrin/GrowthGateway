@@ -1,0 +1,84 @@
+@layer components {
+  .region {
+    position: fixed;
+    inset-block-end: var(--space-4);
+    inset-inline: var(--space-4);
+    z-index: var(--z-toast);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+    padding: 0;
+    list-style: none;
+    pointer-events: none;
+
+    @media (--bp-md) {
+      inset-inline: auto var(--space-6);
+      inline-size: 24rem;
+    }
+  }
+
+  .toast {
+    --tone: var(--color-accent-default);
+
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    border-inline-start: 4px solid var(--tone);
+    background: var(--color-surface-raised);
+    box-shadow: var(--shadow-lg);
+    pointer-events: auto;
+
+    @media (--motion-ok) {
+      animation: toast-in var(--motion-duration-base) var(--motion-easing-emphasized);
+    }
+  }
+
+  .success {
+    --tone: var(--color-validation-pass);
+  }
+
+  .error {
+    --tone: var(--color-validation-fail);
+  }
+
+  .icon {
+    inline-size: 1.2rem;
+    block-size: 1.2rem;
+    flex-shrink: 0;
+    color: var(--tone);
+  }
+
+  .message {
+    flex: 1;
+    font-size: var(--font-size-sm);
+  }
+
+  .close {
+    display: grid;
+    place-items: center;
+    inline-size: var(--size-control-sm);
+    block-size: var(--size-control-sm);
+    margin-block: calc(var(--space-1) * -1);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+
+    & svg {
+      inline-size: 1rem;
+      block-size: 1rem;
+    }
+
+    &:hover {
+      background: var(--color-surface-hover);
+    }
+  }
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      translate: 0 0.75rem;
+    }
+  }
+}

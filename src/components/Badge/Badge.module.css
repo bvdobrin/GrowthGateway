@@ -1,0 +1,53 @@
+@layer components {
+  .badge {
+    --badge-color: var(--color-text-muted);
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    max-inline-size: 100%;
+    padding-block: 0.125rem;
+    padding-inline: var(--space-2);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--font-line-height-snug);
+    white-space: nowrap;
+
+    & svg {
+      inline-size: 0.8rem;
+      block-size: 0.8rem;
+      flex-shrink: 0;
+    }
+  }
+
+  .label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .soft {
+    color: color-mix(in oklch, var(--badge-color), var(--color-text-default) 25%);
+    background: color-mix(in oklch, var(--badge-color) 14%, transparent);
+  }
+
+  .solid {
+    color: var(--color-text-on-accent);
+    background: var(--badge-color);
+  }
+
+  .outline {
+    color: var(--badge-color);
+    box-shadow: inset 0 0 0 var(--border-width-thin) color-mix(in oklch, var(--badge-color) 55%, transparent);
+  }
+
+  .tag {
+    display: inline-flex;
+    padding-block: 0.125rem;
+    padding-inline: var(--space-2);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-sunken);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+  }
+}

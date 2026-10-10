@@ -1,0 +1,33 @@
+{
+  "title": "Chiedi all'IA di GrowthGateway",
+  "subtitle": "Le risposte usano solo i contenuti accessibili ai tuoi gruppi.",
+  "mode": {
+    "mock": "Glean (simulato)",
+    "proxy": "Proxy Glean MCP"
+  },
+  "placeholder": "Chiedi di contenuti, campagne o come fare qualcosa…",
+  "inputLabel": "La tua domanda",
+  "send": "Invia",
+  "thinking": "Ricerca nei tuoi contenuti…",
+  "clear": "Nuova conversazione",
+  "sources": "Fonti",
+  "you": "Tu",
+  "assistant": "Assistente",
+  "empty": "Prova una di queste:",
+  "suggestions": [
+    "Ultimi comunicati stampa europei",
+    "Trascrizioni di interviste sull'idrogeno",
+    "Foto della metro di Dubai",
+    "Come carico un video?"
+  ],
+  "answers": {
+    "help": "Posso trovare i contenuti a cui hai accesso in tutte le fonti collegate. Prova:\n\n- **Ultimi comunicati stampa europei**\n- **Trascrizioni di interviste sull'idrogeno**\n- **Loghi e linee guida del marchio**\n\nPosso anche spiegare come caricare, ottenere un'approvazione o richiedere l'accesso.",
+    "howUpload": "Per aggiungere un contenuto, apri **Aggiungi contenuto**. Puoi:\n\n1. **Caricare file**: rilascia i file, scegli una categoria e indica chi può accedervi.\n2. **Scrivere**: redigi testi web, email, memo o comunicati direttamente.\n3. **Collegare da un sistema precedente**: registra qualcosa che è ancora in SharePoint, Box, Dropbox e simili.\n\nLa verifica parte da sola al salvataggio.",
+    "howApprove": "Apri il contenuto, esegui la **verifica**, correggi i controlli non superati e scegli **Invia per l'approvazione**. Chi approva in regione esamina i contenuti della propria regione; gli amministratori globali del marchio esaminano tutto.",
+    "howAccess": "Vedi solo i contenuti condivisi con uno dei tuoi gruppi, e solo fino al tuo livello di accesso. Se ti serve qualcosa, chiedi al responsabile o a un amministratore globale del marchio di condividerlo con il tuo gruppo.",
+    "none": "Non ho trovato nulla a cui hai accesso che corrisponda a «{{query}}». Prova altre parole o chiedi al team responsabile di condividerlo con il tuo gruppo.",
+    "found_one": "Ho trovato {{count}} contenuto a cui puoi accedere:",
+    "found_other": "Ho trovato {{count}} contenuti a cui puoi accedere. I più pertinenti:",
+    "permissionNote": "_Sono inclusi solo i contenuti condivisi con i tuoi gruppi._"
+  }
+}

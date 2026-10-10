@@ -1,0 +1,79 @@
+@layer components {
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    min-inline-size: 0;
+  }
+
+  .fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    min-inline-size: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-default);
+    padding: 0;
+  }
+
+  .required {
+    margin-inline-start: 0.2em;
+    color: var(--color-danger-text);
+  }
+
+  .hint {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+
+  .error {
+    font-size: var(--font-size-xs);
+    color: var(--color-danger-text);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    min-block-size: var(--size-control-sm);
+    padding-block: var(--space-1);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+
+    & input {
+      margin-block-start: 0.15rem;
+    }
+
+    & > span {
+      flex: 1;
+      min-inline-size: 0;
+    }
+
+    &:has(input:disabled) {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    @media (pointer: coarse) {
+      min-block-size: var(--size-touch);
+      align-items: center;
+
+      & input {
+        margin-block-start: 0;
+      }
+    }
+  }
+
+  .checkboxHint {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+}

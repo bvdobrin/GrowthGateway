@@ -1,0 +1,38 @@
+{
+  "appName": "GrowthGateway",
+  "tagline": "Comms & Growth アセットゲートウェイ",
+  "dashboard": "ダッシュボード",
+  "library": "ライブラリ",
+  "addAsset": "アセットを追加",
+  "generate": "生成",
+  "approvals": "承認",
+  "audit": "監査ログ",
+  "taxonomy": "タクソノミー",
+  "assistant": "AI に質問",
+  "menu": "メニューを開く",
+  "closeMenu": "メニューを閉じる",
+  "mainNav": "メインナビゲーション",
+  "skipToContent": "コンテンツへスキップ",
+  "sections": {
+    "work": "業務",
+    "governance": "ガバナンス"
+  },
+  "viewAs": "表示ユーザーを切り替え",
+  "viewAsHint": "別のペルソナの権限をプレビューします。",
+  "viewingAs": "{{name}} として表示中",
+  "stopViewingAs": "{{name}} に戻る",
+  "signedInAs": "{{name}} としてサインイン中",
+  "signOut": "サインアウト",
+  "account": "アカウントと設定",
+  "language": "言語",
+  "theme": {
+    "label": "テーマ",
+    "light": "ライト",
+    "dark": "ダーク",
+    "toggle": "{{mode}}テーマに切り替え",
+    "blue": "ブルー",
+    "lightModern": "ライトモダン"
+  },
+  "settings": "設定",
+  "demo": "デモ: SSO、IAM、すべてのバックエンドはモックです。"
+}

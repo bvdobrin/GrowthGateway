@@ -1,0 +1,179 @@
+{
+  "title": "Validation",
+  "overall": {
+    "pass": "All checks passed",
+    "warn": "Passed with warnings",
+    "fail": "Some checks failed"
+  },
+  "notRun": "Not validated yet. Run validation to check this asset against its category's rules.",
+  "checkedAt": "Checked {{date}}",
+  "summary": "{{pass}} passed · {{warn}} warnings · {{fail}} failed",
+  "status": {
+    "pass": "Pass",
+    "warn": "Warning",
+    "fail": "Fail"
+  },
+  "rules": {
+    "required-fields": "Required fields",
+    "naming-convention": "Naming convention",
+    "format-allowed": "Allowed format",
+    "classification-set": "Classification and access",
+    "rights-not-expired": "Usage rights",
+    "legacy-link": "Storage",
+    "report-version-period": "Version and period",
+    "meta-description-length": "Meta description length",
+    "no-broken-placeholders": "Placeholders",
+    "email-unsubscribe": "Unsubscribe link",
+    "email-subject-length": "Subject length",
+    "memo-not-public": "Memo classification",
+    "pr-legal-signoff": "Legal sign-off",
+    "pr-embargo-future": "Embargo",
+    "pr-boilerplate-current": "Boilerplate version",
+    "photo-release": "Model or property release",
+    "photo-min-resolution": "Resolution",
+    "illustration-licence": "Licence",
+    "illustration-source-file": "Source file",
+    "infographic-sources": "Data sources",
+    "infographic-text-alt": "Text alternative",
+    "infographic-data-fresh": "Data freshness",
+    "ad-disclaimer": "Regulatory disclaimer",
+    "ad-dimensions": "Placement dimensions",
+    "promo-print-specs": "Print specs",
+    "video-captions": "Captions",
+    "video-music-licence": "Music licence",
+    "meeting-minutes": "Minutes",
+    "pc-transcript": "Transcript",
+    "pc-speakers": "Speakers",
+    "interview-consent": "Consent",
+    "brand-approved-version": "Brand version",
+    "brand-no-deprecated-palette": "Colour palette"
+  },
+  "msg": {
+    "requiredFields": {
+      "pass": "All required fields are filled in.",
+      "fail": "Missing: {{fields}}."
+    },
+    "naming": {
+      "pass": "Title and file name follow the naming convention.",
+      "title": "Rename this asset: titles like \"untitled\", \"copy of\" or \"final final\" aren't allowed.",
+      "fileName": "File name \"{{name}}\" has spaces or is a camera default. Use lowercase words joined by hyphens."
+    },
+    "format": {
+      "pass": "{{format}} is allowed for this category.",
+      "notAllowed": "{{format}} isn't an allowed format for this category.",
+      "noFile": "There is no file attached.",
+      "mimeMismatch": "\"{{name}}\" doesn't match the asset's format."
+    },
+    "classification": {
+      "pass": "Classified {{classification}} and shared with {{count}} group(s).",
+      "noGroups": "Share with at least one group."
+    },
+    "rights": {
+      "none": "No usage-rights expiry recorded.",
+      "valid": "Usage rights valid until {{date}}.",
+      "expiringSoon": "Usage rights expire on {{date}}, within 30 days.",
+      "expired": "Usage rights expired on {{date}}. Downloads are blocked."
+    },
+    "legacy": {
+      "migrated": "Stored in GrowthGateway.",
+      "linked": "The original is still in {{source}}. Migrate it before the legacy system goes read-only."
+    },
+    "report": {
+      "pass": "Version and reporting period are set.",
+      "missing": "Set both the version and the reporting period."
+    },
+    "web": {
+      "metaOk": "Meta description is {{length}} of {{max}} characters.",
+      "metaTooLong": "Meta description is {{length}} characters; keep it under {{max}}.",
+      "metaMissing": "Add a meta description.",
+      "noPlaceholders": "No unfinished placeholders found.",
+      "placeholders": "Replace the placeholder {{sample}} before publishing."
+    },
+    "email": {
+      "unsubscribeNotNeeded": "Internal audience: no unsubscribe link needed.",
+      "unsubscribePresent": "Unsubscribe link present.",
+      "unsubscribeMissing": "External emails need an unsubscribe link (the unsubscribe_url placeholder).",
+      "subjectOk": "Subject is {{length}} of {{max}} characters.",
+      "subjectTooLong": "Subject is {{length}} characters; keep it under {{max}}."
+    },
+    "memo": {
+      "ok": "Memo isn't classified as Public.",
+      "public": "Memos are internal; don't classify them as Public."
+    },
+    "pr": {
+      "legalOk": "Legal sign-off received.",
+      "legalMissing": "Press releases need legal sign-off.",
+      "noEmbargo": "No embargo set.",
+      "embargoOk": "Embargo until {{date}}.",
+      "embargoPast": "Embargo time {{date}} has passed but the release isn't approved.",
+      "boilerplateOk": "Uses the current boilerplate ({{version}}).",
+      "boilerplateOutdated": "Uses boilerplate {{version}}; the current version is {{current}}.",
+      "boilerplateMissing": "Set the boilerplate version."
+    },
+    "photo": {
+      "noPeople": "No identifiable people, so no release is needed.",
+      "releaseOk": "Release on file for the people shown.",
+      "releaseMissing": "Identifiable people are shown but no release is on file.",
+      "resOk": "Resolution {{width}}×{{height}}.",
+      "lowRes": "Resolution {{width}}×{{height}} is below the {{min}} px minimum on the long edge.",
+      "unknownRes": "Resolution unknown; photos need at least {{min}} px on the long edge."
+    },
+    "illustration": {
+      "licenceOk": "Licence recorded.",
+      "licenceMissing": "Record the licence.",
+      "sourceOk": "Editable source file available.",
+      "sourceMissing": "Attach the layered source file (AI, PSD or similar)."
+    },
+    "infographic": {
+      "sourcesOk": "Data sources cited.",
+      "sourcesMissing": "Cite the data sources.",
+      "textAltOk": "Text alternative provided.",
+      "textAltMissing": "Add a text alternative for screen readers.",
+      "dataFresh": "Data as of {{date}}.",
+      "dataStale": "Data as of {{date}} is more than 12 months old.",
+      "dataDateMissing": "Record the date the data is valid for."
+    },
+    "ad": {
+      "disclaimerOk": "Regulatory disclaimer present.",
+      "disclaimerMissing": "Add the regulatory disclaimer required in {{region}}.",
+      "dimensionsOk": "Artwork matches the {{expected}} placement.",
+      "dimensionMismatch": "Artwork is {{actual}} but the placement is {{expected}}.",
+      "dimensionsUnknown": "Artwork size unknown for the {{expected}} placement.",
+      "dimensionsNotApplicable": "Placement isn't measured in pixels."
+    },
+    "promo": {
+      "digital": "Digital format: print specs not needed.",
+      "printOk": "Print-ready: bleed and CMYK profile set.",
+      "printSpecs": "Print files need at least {{min}} mm bleed and a CMYK profile (bleed is {{bleed}} mm)."
+    },
+    "video": {
+      "captionsOk": "Captions file attached.",
+      "captionsMissing": "Attach a captions file (WebVTT).",
+      "musicOk": "Music licence recorded.",
+      "musicMissing": "Record the music licence."
+    },
+    "meeting": {
+      "upcoming": "Meeting hasn't happened yet.",
+      "minutesOk": "Minutes attached.",
+      "minutesMissing": "Attach the minutes."
+    },
+    "pc": {
+      "transcriptOk": "Transcript attached.",
+      "transcriptPending": "Add a transcript after the event.",
+      "transcriptMissing": "Attach the transcript.",
+      "speakersOk": "Speakers listed.",
+      "speakersMissing": "List the speakers."
+    },
+    "interview": {
+      "consentOk": "Consent on file.",
+      "consentMissing": "Record the interviewee's consent before use."
+    },
+    "brand": {
+      "versionOk": "Uses brand {{version}}.",
+      "versionDeprecated": "Uses brand {{version}}; only {{current}} is approved.",
+      "versionMissing": "Set the brand version (current: {{current}}).",
+      "paletteOk": "Uses an approved colour palette.",
+      "paletteDeprecated": "The {{palette}} palette is deprecated."
+    }
+  }
+}

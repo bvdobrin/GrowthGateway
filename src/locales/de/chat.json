@@ -1,0 +1,33 @@
+{
+  "title": "GrowthGateway-KI fragen",
+  "subtitle": "Antworten nutzen nur Inhalte, auf die Ihre Gruppen zugreifen können.",
+  "mode": {
+    "mock": "Glean (simuliert)",
+    "proxy": "Glean-MCP-Proxy"
+  },
+  "placeholder": "Fragen Sie nach Inhalten, Kampagnen oder dem Vorgehen…",
+  "inputLabel": "Ihre Frage",
+  "send": "Senden",
+  "thinking": "Ihre Inhalte werden durchsucht…",
+  "clear": "Neues Gespräch",
+  "sources": "Quellen",
+  "you": "Sie",
+  "assistant": "Assistent",
+  "empty": "Probieren Sie eine dieser Fragen:",
+  "suggestions": [
+    "Neueste Pressemitteilungen aus Europa",
+    "Interview-Transkripte zu Wasserstoff",
+    "Fotos der Metro Dubai",
+    "Wie lade ich ein Video hoch?"
+  ],
+  "answers": {
+    "help": "Ich finde Inhalte, auf die Sie Zugriff haben, über alle verbundenen Quellen hinweg. Versuchen Sie:\n\n- **Neueste Pressemitteilungen aus Europa**\n- **Interview-Transkripte zu Wasserstoff**\n- **Logos und Markenrichtlinien**\n\nIch kann auch erklären, wie Sie hochladen, eine Freigabe erhalten oder Zugriff anfordern.",
+    "howUpload": "Um einen Inhalt hinzuzufügen, öffnen Sie **Inhalt hinzufügen**. Sie können:\n\n1. **Dateien hochladen**: Dateien ablegen, eine Kategorie wählen und festlegen, wer zugreifen darf.\n2. **Schreiben**: Webtexte, E-Mails, Memos oder Pressemitteilungen direkt verfassen.\n3. **Aus einem Altsystem verknüpfen**: etwas registrieren, das noch in SharePoint, Box, Dropbox und Ähnlichem liegt.\n\nDie Prüfung läuft beim Speichern automatisch.",
+    "howApprove": "Öffnen Sie den Inhalt, starten Sie die **Prüfung**, beheben Sie fehlgeschlagene Punkte und wählen Sie **Zur Freigabe einreichen**. Regionale Freigebende prüfen Inhalte ihrer Region, die globale Markenadministration prüft alles.",
+    "howAccess": "Sie sehen nur Inhalte, die mit einer Ihrer Gruppen geteilt sind, und nur bis zu Ihrer Freigabestufe. Wenn Sie etwas brauchen, bitten Sie die verantwortliche Person oder die globale Markenadministration, es mit Ihrer Gruppe zu teilen.",
+    "none": "Ich habe nichts gefunden, auf das Sie Zugriff haben und das zu „{{query}}“ passt. Andere Begriffe versuchen oder das zuständige Team bitten, es mit Ihrer Gruppe zu teilen.",
+    "found_one": "Ich habe {{count}} Inhalt gefunden, auf den Sie zugreifen können:",
+    "found_other": "Ich habe {{count}} Inhalte gefunden, auf die Sie zugreifen können. Die relevantesten:",
+    "permissionNote": "_Enthalten sind nur Inhalte, die mit Ihren Gruppen geteilt sind._"
+  }
+}

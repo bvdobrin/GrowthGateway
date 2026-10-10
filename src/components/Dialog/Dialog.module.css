@@ -1,0 +1,158 @@
+@layer components {
+  .dialog {
+    inline-size: min(100% - var(--space-6), 36rem);
+    max-inline-size: none;
+    max-block-size: min(100dvh - var(--space-6), 52rem);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-raised);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+
+    &::backdrop {
+      background: var(--color-surface-overlay);
+    }
+
+    &[open] {
+      display: flex;
+    }
+
+    /* Modals sit in the middle of the viewport. Sheets keep their own edge alignment. */
+    &[open]:not(.sheetStart, .sheetEnd, .sheetBottom) {
+      position: fixed;
+      inset: 0;
+      block-size: fit-content;
+      margin: auto;
+    }
+
+    @media (--motion-ok) {
+      &[open] {
+        animation: fade-in var(--motion-duration-base) var(--motion-easing-standard);
+      }
+    }
+  }
+
+  .lg {
+    inline-size: min(100% - var(--space-6), 52rem);
+  }
+
+  /* Sheets slide from the inline start/end edge, so they mirror in RTL. */
+  .sheetStart,
+  .sheetEnd {
+    block-size: 100dvh;
+    max-block-size: 100dvh;
+    inline-size: min(88vw, 22rem);
+    margin-block: 0;
+    border-radius: 0;
+  }
+
+  .sheetStart {
+    margin-inline: 0 auto;
+  }
+
+  .sheetEnd {
+    margin-inline: auto 0;
+    inline-size: min(92vw, 24rem);
+  }
+
+  .sheetBottom {
+    inline-size: 100%;
+    max-block-size: 85dvh;
+    margin-block: auto 0;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+
+    @media (--bp-md) {
+      inline-size: min(100% - var(--space-6), 36rem);
+      margin-block: auto;
+      border-radius: var(--radius-lg);
+    }
+  }
+
+  @media (--motion-ok) {
+    .sheetStart[open] {
+      animation: slide-from-start var(--motion-duration-base) var(--motion-easing-standard);
+    }
+
+    .sheetEnd[open] {
+      animation: slide-from-end var(--motion-duration-base) var(--motion-easing-standard);
+    }
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-block-size: 0;
+    inline-size: 100%;
+  }
+
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding-block: var(--space-4) var(--space-2);
+    padding-inline: var(--space-5) var(--space-3);
+  }
+
+  .heading {
+    min-inline-size: 0;
+  }
+
+  .title {
+    font-size: var(--font-size-lg);
+  }
+
+  .description {
+    margin-block-start: var(--space-1);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .body {
+    flex: 1;
+    min-block-size: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-block: var(--space-2) var(--space-5);
+    padding-inline: var(--space-5);
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    padding-block: var(--space-3);
+    padding-inline: var(--space-5);
+    border-block-start: var(--border-width-thin) solid var(--color-border-default);
+    background: var(--color-surface-base);
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      translate: 0 0.5rem;
+    }
+  }
+
+  @keyframes slide-from-start {
+    from {
+      translate: -100% 0;
+    }
+  }
+
+  @keyframes slide-from-end {
+    from {
+      translate: 100% 0;
+    }
+  }
+
+  .sheetStart:dir(rtl)[open] {
+    animation-name: slide-from-end;
+  }
+
+  .sheetEnd:dir(rtl)[open] {
+    animation-name: slide-from-start;
+  }
+}

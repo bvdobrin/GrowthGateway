@@ -1,0 +1,110 @@
+{
+  "actions": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "clear": "مسح",
+    "back": "رجوع",
+    "retry": "إعادة المحاولة",
+    "remove": "إزالة",
+    "create": "إنشاء",
+    "viewAll": "عرض الكل",
+    "loading": "جارٍ التحميل…"
+  },
+  "status": {
+    "draft": "مسودة",
+    "pending_validation": "بانتظار الفحص",
+    "pending_approval": "بانتظار الموافقة",
+    "approved": "معتمد",
+    "rejected": "مرفوض",
+    "expired": "منتهي الصلاحية"
+  },
+  "classification": {
+    "public": "عام",
+    "internal": "داخلي",
+    "confidential": "سري",
+    "restricted": "مقيّد"
+  },
+  "region": {
+    "NA": "أمريكا الشمالية",
+    "EMEA": "أوروبا",
+    "MEA": "الشرق الأوسط",
+    "APAC": "آسيا والمحيط الهادئ",
+    "GLOBAL": "عالمي"
+  },
+  "migration": {
+    "linked": "مرتبط في المصدر القديم",
+    "migrated": "مخزّن في GrowthGateway"
+  },
+  "count": {
+    "assets_zero": "لا أصول",
+    "assets_one": "أصل واحد",
+    "assets_two": "أصلان",
+    "assets_few": "{{count}} أصول",
+    "assets_many": "{{count}} أصلًا",
+    "assets_other": "{{count}} أصل",
+    "files_zero": "لا ملفات",
+    "files_one": "ملف واحد",
+    "files_two": "ملفان",
+    "files_few": "{{count}} ملفات",
+    "files_many": "{{count}} ملفًا",
+    "files_other": "{{count}} ملف",
+    "groups_zero": "لا مجموعات",
+    "groups_one": "مجموعة واحدة",
+    "groups_two": "مجموعتان",
+    "groups_few": "{{count}} مجموعات",
+    "groups_many": "{{count}} مجموعة",
+    "groups_other": "{{count}} مجموعة"
+  },
+  "errors": {
+    "generic": "حدث خطأ ما.",
+    "notFoundOrNoAccess": "هذا الأصل غير موجود، أو ليست لديك صلاحية الوصول إليه.",
+    "forbiddenHint": "اطلب من مسؤول العلامة التجارية العالمي إن كنت بحاجة إلى صلاحية {{permission}}."
+  },
+  "toast": {
+    "saved": "تم حفظ التغييرات.",
+    "uploaded_zero": "لم تتم إضافة أي أصل.",
+    "uploaded_one": "تمت إضافة أصل واحد.",
+    "uploaded_two": "تمت إضافة أصلين.",
+    "uploaded_few": "تمت إضافة {{count}} أصول.",
+    "uploaded_many": "تمت إضافة {{count}} أصلًا.",
+    "uploaded_other": "تمت إضافة {{count}} أصل.",
+    "downloadStarted": "جارٍ تنزيل {{name}}",
+    "submitted": "تم الإرسال للموافقة.",
+    "approved": "تم اعتماد «{{title}}».",
+    "rejected": "تم رفض «{{title}}».",
+    "validated": "اكتمل الفحص: {{result}}.",
+    "generated": "تم إنشاء «{{title}}».",
+    "migrated": "تم الترحيل إلى GrowthGateway.",
+    "deleted": "تم حذف \"{{title}}\".",
+    "deletedMany_one": "تم حذف {{count}} أصل.",
+    "deletedMany_other": "تم حذف {{count}} من الأصول.",
+    "categoryCreated": "تم إنشاء الفئة «{{label}}».",
+    "demoReset": "تمت استعادة بيانات العرض التوضيحي."
+  },
+  "login": {
+    "title": "تسجيل الدخول إلى GrowthGateway",
+    "subtitle": "بوابة واحدة إلى جميع أصول الاتصال والنمو، في كل المناطق وكل الأنظمة القديمة.",
+    "choosePersona": "المتابعة عبر تسجيل الدخول الموحد للشركة بصفة",
+    "personaHint": "تسجيل الدخول الموحد محاكاة. لكل هوية مجموعات ومستوى تصريح مختلف، لذا ترى كل منها أصولًا مختلفة.",
+    "redirecting": "جارٍ التحويل إلى {{idp}}…",
+    "groups": "المجموعات",
+    "clearance": "مستوى التصريح",
+    "external": "خارجي",
+    "failed": "تعذّر تسجيل الدخول. حاول مرة أخرى."
+  },
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "body": "الصفحة التي تبحث عنها غير موجودة.",
+    "home": "الانتقال إلى لوحة المعلومات"
+  },
+  "forbidden": {
+    "title": "تم رفض الوصول",
+    "body": "مجموعاتك لا تمنحك صلاحية الوصول إلى هذه الصفحة."
+  },
+  "yes": "نعم",
+  "no": "لا",
+  "none": "لا شيء",
+  "notSet": "غير محدد",
+  "peopleHint": "افصل الأسماء بفواصل."
+}

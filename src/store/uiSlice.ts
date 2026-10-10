@@ -2,7 +2,11 @@ import { createSlice, nanoid, type PayloadAction } from '@reduxjs/toolkit';
 import { detectInitialLocale, type UiLocale } from '@/i18n';
 
 export type Theme = 'light' | 'dark';
-export type Palette = 'blue' | 'light-modern';
+export type Palette = 'blue' | 'modern';
+export type Appearance = 'light-blue' | 'dark-blue' | 'light-modern' | 'dark-modern';
+
+const APPEARANCES: readonly Appearance[] = ['light-blue', 'dark-blue', 'light-modern', 'dark-modern'];
+const APPEARANCE_KEY = 'gg:appearance';
 const THEME_KEY = 'gg:theme';
 const PALETTE_KEY = 'gg:palette';
 
@@ -19,38 +23,47 @@ export interface UiState {
   toasts: Toast[];
 }
 
-export function detectInitialTheme(): Theme {
-  try {
-    const stored = localStorage.getItem(THEME_KEY);
-    if (stored === 'light' || stored === 'dark') return stored;
-  } catch {
-    /* storage unavailable */
-  }
+export function appearanceOf(theme: Theme, palette: Palette): Appearance {
+  return `${theme}-${palette}`;
+}
+
+export function splitAppearance(appearance: Appearance): { theme: Theme; palette: Palette } {
+  return {
+    theme: appearance.startsWith('dark') ? 'dark' : 'light',
+    palette: appearance.endsWith('modern') ? 'modern' : 'blue',
+  };
+}
+
+function isAppearance(value: string | null): value is Appearance {
+  return !!value && (APPEARANCES as readonly string[]).includes(value);
+}
+
+function preferredTheme(): Theme {
   return typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
-export function applyPalette(palette: Palette) {
-  if (palette === 'light-modern') document.documentElement.dataset.palette = 'light-modern';
+/** Restores the last choice, including the previous separate theme and palette keys. */
+export function detectInitialAppearance(): { theme: Theme; palette: Palette } {
+  try {
+    const stored = localStorage.getItem(APPEARANCE_KEY);
+    if (isAppearance(stored)) return splitAppearance(stored);
+
+    const themeStored = localStorage.getItem(THEME_KEY);
+    const paletteStored = localStorage.getItem(PALETTE_KEY);
+    const theme: Theme = themeStored === 'light' || themeStored === 'dark' ? themeStored : preferredTheme();
+    const palette: Palette = paletteStored === 'modern' || paletteStored === 'light-modern' ? 'modern' : 'blue';
+    return { theme, palette };
+  } catch {
+    return { theme: 'light', palette: 'blue' };
+  }
+}
+
+export function applyAppearance(theme: Theme, palette: Palette) {
+  document.documentElement.dataset.theme = theme;
+  if (palette === 'modern') document.documentElement.dataset.palette = 'modern';
   else delete document.documentElement.dataset.palette;
   try {
-    localStorage.setItem(PALETTE_KEY, palette);
-  } catch {
-    /* storage unavailable */
-  }
-}
-
-function detectInitialPalette(): Palette {
-  try {
-    return localStorage.getItem(PALETTE_KEY) === 'light-modern' ? 'light-modern' : 'blue';
-  } catch {
-    return 'blue';
-  }
-}
-
-export function applyTheme(theme: Theme) {
-  document.documentElement.dataset.theme = theme;
-  try {
-    localStorage.setItem(THEME_KEY, theme);
+    localStorage.setItem(APPEARANCE_KEY, appearanceOf(theme, palette));
   } catch {
     /* storage unavailable */
   }
@@ -58,16 +71,12 @@ export function applyTheme(theme: Theme) {
 
 const uiSlice = createSlice({
   name: 'ui',
-  initialState: (): UiState => ({ theme: detectInitialTheme(), palette: detectInitialPalette(), locale: detectInitialLocale(), toasts: [] }),
+  initialState: (): UiState => ({ ...detectInitialAppearance(), locale: detectInitialLocale(), toasts: [] }),
   reducers: {
-    setTheme(state, action: PayloadAction<Theme>) {
-      state.theme = action.payload;
-    },
-    toggleTheme(state) {
-      state.theme = state.theme === 'dark' ? 'light' : 'dark';
-    },
-    setPalette(state, action: PayloadAction<Palette>) {
-      state.palette = action.payload;
+    setAppearance(state, action: PayloadAction<Appearance>) {
+      const next = splitAppearance(action.payload);
+      state.theme = next.theme;
+      state.palette = next.palette;
     },
     setLocale(state, action: PayloadAction<UiLocale>) {
       state.locale = action.payload;
@@ -87,10 +96,9 @@ const uiSlice = createSlice({
   },
 });
 
-export const { setTheme, toggleTheme, setPalette, setLocale, pushToast, dismissToast } = uiSlice.actions;
+export const { setAppearance, setLocale, pushToast, dismissToast } = uiSlice.actions;
 export default uiSlice.reducer;
 
-export const selectTheme = (state: { ui: UiState }) => state.ui.theme;
-export const selectPalette = (state: { ui: UiState }) => state.ui.palette;
+export const selectAppearance = (state: { ui: UiState }) => appearanceOf(state.ui.theme, state.ui.palette);
 export const selectLocale = (state: { ui: UiState }) => state.ui.locale;
 export const selectToasts = (state: { ui: UiState }) => state.ui.toasts;

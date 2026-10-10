@@ -5,7 +5,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Button } from '@/components/Button/Button';
 import { ChatDrawer } from '@/components/ChatDrawer/ChatDrawer';
 import { Dialog } from '@/components/Dialog/Dialog';
-import { AccountPanel, Avatar, LanguageSwitcher, PaletteSwitcher } from '@/components/Identity/Identity';
+import { AccountPanel, Avatar, LanguageSwitcher, ThemeSwitcher } from '@/components/Identity/Identity';
 import { Popover } from '@/components/Popover/Popover';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
@@ -25,7 +25,7 @@ function SettingsTab() {
       </summary>
       <div className={styles.settingsBody}>
         <LanguageSwitcher block />
-        <PaletteSwitcher block />
+        <ThemeSwitcher block />
       </div>
     </details>
   );

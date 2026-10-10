@@ -5,4 +5,4 @@
 @import './base.css' layer(base);
 @import './layout.css' layer(layout);
 @import './utilities.css' layer(utilities);
-@import './theme-light-modern.css' layer(overrides);
+@import './theme-modern.css' layer(overrides);

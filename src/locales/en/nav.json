@@ -27,11 +27,10 @@
   "language": "Language",
   "theme": {
     "label": "Theme",
-    "light": "Light",
-    "dark": "Dark",
-    "toggle": "Switch to {{mode}} theme",
-    "blue": "Blue",
-    "lightModern": "Light Modern"
+    "lightBlue": "Light blue",
+    "darkBlue": "Dark blue",
+    "lightModern": "Light modern",
+    "darkModern": "Dark modern"
   },
   "settings": "Settings",
   "demo": "Demo: SSO, IAM and every backend are mocked."

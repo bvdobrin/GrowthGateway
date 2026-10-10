@@ -27,11 +27,10 @@
   "language": "Langue",
   "theme": {
     "label": "Thème",
-    "light": "clair",
-    "dark": "sombre",
-    "toggle": "Passer au thème {{mode}}",
-    "blue": "Bleu",
-    "lightModern": "Moderne clair"
+    "lightBlue": "Bleu clair",
+    "darkBlue": "Bleu sombre",
+    "lightModern": "Moderne clair",
+    "darkModern": "Moderne sombre"
   },
   "settings": "Réglages",
   "demo": "Démo : SSO, IAM et tous les services sont simulés."

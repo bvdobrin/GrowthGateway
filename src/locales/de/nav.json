@@ -27,11 +27,10 @@
   "language": "Sprache",
   "theme": {
     "label": "Darstellung",
-    "light": "Hell",
-    "dark": "Dunkel",
-    "toggle": "Zur Darstellung {{mode}} wechseln",
-    "blue": "Blau",
-    "lightModern": "Hell und modern"
+    "lightBlue": "Hellblau",
+    "darkBlue": "Dunkelblau",
+    "lightModern": "Hell modern",
+    "darkModern": "Dunkel modern"
   },
   "settings": "Einstellungen",
   "demo": "Demo: SSO, IAM und alle Backends sind simuliert."

@@ -7,12 +7,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './app/AppRoutes';
 import { applyDocumentLocale } from './i18n';
 import { store } from './store';
-import { applyPalette, applyTheme } from './store/uiSlice';
+import { applyAppearance } from './store/uiSlice';
 
 const { ui } = store.getState();
 applyDocumentLocale(ui.locale);
-applyTheme(ui.theme);
-applyPalette(ui.palette);
+applyAppearance(ui.theme, ui.palette);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { Check, LogOut, Moon, Sun } from 'lucide-react';
+import { Check, LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { LOCALE_NAMES, SUPPORTED_LOCALES, type UiLocale } from '@/i18n';
@@ -7,7 +7,7 @@ import { PERSONAS } from '@/mocks/users';
 import { groupName } from '@/services/iamService';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { logout, selectCurrentUser, selectSignedInUser, viewAs } from '@/store/sessionSlice';
-import { selectLocale, selectPalette, selectTheme, setLocale, setPalette, toggleTheme, type Palette } from '@/store/uiSlice';
+import { selectAppearance, selectLocale, setAppearance, setLocale, type Appearance } from '@/store/uiSlice';
 import type { User } from '@/types';
 import { Button } from '../Button/Button';
 import styles from './Identity.module.css';
@@ -52,16 +52,26 @@ export function LanguageSwitcher({ id, className, block }: { id?: string; classN
   );
 }
 
-export function PaletteSwitcher({ block }: { block?: boolean }) {
+const APPEARANCES: { value: Appearance; labelKey: 'theme.lightBlue' | 'theme.darkBlue' | 'theme.lightModern' | 'theme.darkModern' }[] = [
+  { value: 'light-blue', labelKey: 'theme.lightBlue' },
+  { value: 'dark-blue', labelKey: 'theme.darkBlue' },
+  { value: 'light-modern', labelKey: 'theme.lightModern' },
+  { value: 'dark-modern', labelKey: 'theme.darkModern' },
+];
+
+export function ThemeSwitcher({ block }: { block?: boolean }) {
   const { t } = useTranslation('nav');
   const dispatch = useAppDispatch();
-  const palette = useAppSelector(selectPalette);
+  const appearance = useAppSelector(selectAppearance);
   const control = (
     <label className={styles.language}>
       <span className="u-visually-hidden">{t('theme.label')}</span>
-      <select value={palette} onChange={(e) => dispatch(setPalette(e.target.value as Palette))}>
-        <option value="blue">{t('theme.blue')}</option>
-        <option value="light-modern">{t('theme.lightModern')}</option>
+      <select value={appearance} onChange={(e) => dispatch(setAppearance(e.target.value as Appearance))}>
+        {APPEARANCES.map((option) => (
+          <option key={option.value} value={option.value}>
+            {t(option.labelKey)}
+          </option>
+        ))}
       </select>
     </label>
   );
@@ -71,18 +81,6 @@ export function PaletteSwitcher({ block }: { block?: boolean }) {
       <span className={styles.fieldLabel}>{t('theme.label')}</span>
       {control}
     </div>
-  );
-}
-
-export function ThemeToggle() {
-  const { t } = useTranslation('nav');
-  const dispatch = useAppDispatch();
-  const theme = useAppSelector(selectTheme);
-  const next = theme === 'dark' ? 'light' : 'dark';
-  return (
-    <Button variant="ghost" icon={theme === 'dark' ? <Sun /> : <Moon />} onClick={() => dispatch(toggleTheme())} aria-pressed={theme === 'dark'}>
-      {t('theme.toggle', { mode: t(`theme.${next}`) })}
-    </Button>
   );
 }
 
@@ -131,7 +129,7 @@ export function PersonaSwitcher({ onSwitched }: { onSwitched?: () => void }) {
   );
 }
 
-/** Identity summary, persona switcher, theme and sign-out. */
+/** Identity summary, persona switcher and sign-out. */
 export function AccountPanel({ onDone }: { onDone?: () => void }) {
   const { t } = useTranslation(['nav', 'common']);
   const dispatch = useAppDispatch();
@@ -161,9 +159,6 @@ export function AccountPanel({ onDone }: { onDone?: () => void }) {
       <hr />
       <PersonaSwitcher onSwitched={onDone} />
       <hr />
-      <div className={styles.settings}>
-        <ThemeToggle />
-      </div>
       <Button
         variant="ghost"
         icon={<LogOut className="u-flip-rtl" />}

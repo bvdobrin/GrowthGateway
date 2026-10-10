@@ -1,0 +1,82 @@
+/**
+ * Modern: flat neutrals, sharp corners, and blue links.
+ * Light uses a white canvas with black actions; dark inverts that.
+ * Lives in the overrides layer so it wins over both token sets.
+ */
+[data-palette='modern'] {
+  --radius-sm: 0;
+  --radius-md: 0.125rem;
+  --radius-lg: 0.125rem;
+}
+
+[data-palette='modern']:not([data-theme='dark']) {
+  color-scheme: light;
+  --color-scheme: light;
+
+  --color-surface-canvas: #f3f3f3;
+  --color-surface-base: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-sunken: #f7f7f7;
+  --color-surface-hover: #eeeeee;
+  --color-surface-selected: #e5f6fb;
+  --color-surface-inverse: #111111;
+  --color-surface-overlay: oklch(0% 0 0 / 0.45);
+
+  --color-text-default: #1a1a1a;
+  --color-text-muted: #4d4d4d;
+  --color-text-subtle: #6e6e6e;
+  --color-text-inverse: #ffffff;
+  --color-text-on-accent: #ffffff;
+  --color-text-link: #0077c8;
+
+  --color-border-default: #e4e4e4;
+  --color-border-strong: #cccccc;
+  --color-border-focus: #00b5e2;
+
+  --color-accent-default: #111111;
+  --color-accent-strong: #000000;
+  --color-accent-subtle: #e5f6fb;
+  --color-accent-text: #0077c8;
+
+  --color-classification-internal: #0077c8;
+
+  --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.06);
+  --shadow-md: 0 2px 8px oklch(0% 0 0 / 0.08);
+  --shadow-lg: 0 12px 32px oklch(0% 0 0 / 0.12);
+}
+
+[data-palette='modern'][data-theme='dark'] {
+  color-scheme: dark;
+  --color-scheme: dark;
+
+  --color-surface-canvas: #111111;
+  --color-surface-base: #1a1a1a;
+  --color-surface-raised: #1f1f1f;
+  --color-surface-sunken: #141414;
+  --color-surface-hover: #2a2a2a;
+  --color-surface-selected: #0e2c36;
+  --color-surface-inverse: #f3f3f3;
+  --color-surface-overlay: oklch(0% 0 0 / 0.6);
+
+  --color-text-default: #f5f5f5;
+  --color-text-muted: #c2c2c2;
+  --color-text-subtle: #9a9a9a;
+  --color-text-inverse: #111111;
+  --color-text-on-accent: #111111;
+  --color-text-link: #4cc3ef;
+
+  --color-border-default: #333333;
+  --color-border-strong: #4a4a4a;
+  --color-border-focus: #00b5e2;
+
+  --color-accent-default: #f5f5f5;
+  --color-accent-strong: #ffffff;
+  --color-accent-subtle: #0e2c36;
+  --color-accent-text: #4cc3ef;
+
+  --color-classification-internal: #4cc3ef;
+
+  --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.4);
+  --shadow-md: 0 2px 8px oklch(0% 0 0 / 0.45);
+  --shadow-lg: 0 12px 32px oklch(0% 0 0 / 0.55);
+}

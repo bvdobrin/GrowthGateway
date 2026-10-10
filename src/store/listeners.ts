@@ -3,7 +3,7 @@ import i18n, { applyDocumentLocale, persistLocale } from '@/i18n';
 import { clearChat } from './chatSlice';
 import { damApi } from './damApi';
 import { login, logout, persistSession, viewAs, type SessionState } from './sessionSlice';
-import { applyPalette, applyTheme, setLocale, setPalette, setTheme, toggleTheme, type UiState } from './uiSlice';
+import { applyAppearance, setAppearance, setLocale, type UiState } from './uiSlice';
 
 type ListenerRoot = { session: SessionState; ui: UiState };
 
@@ -30,11 +30,9 @@ listenerMiddleware.startListening({
 });
 
 listenerMiddleware.startListening({
-  matcher: isAnyOf(setTheme, toggleTheme),
-  effect: (_action, api) => applyTheme((api.getState() as ListenerRoot).ui.theme),
-});
-
-listenerMiddleware.startListening({
-  actionCreator: setPalette,
-  effect: (action) => applyPalette(action.payload),
+  actionCreator: setAppearance,
+  effect: (_action, api) => {
+    const { theme, palette } = (api.getState() as ListenerRoot).ui;
+    applyAppearance(theme, palette);
+  },
 });

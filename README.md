@@ -2,6 +2,8 @@
 
 Comms & Growth digital asset management middleware MVP.
 
+Live web application here: https://growthgateway-production.up.railway.app
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) 20.9.0 or newer

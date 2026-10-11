@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Bot, ChevronDown, Menu, Settings, UserRoundCog } from 'lucide-react';
+import { Bot, ChevronDown, Info, Menu, Settings, UserRoundCog } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Button } from '@/components/Button/Button';
@@ -13,7 +13,18 @@ import { selectChat, toggleChat } from '@/store/chatSlice';
 import { useGetDashboardStatsQuery } from '@/store/damApi';
 import { selectCurrentUser, selectPermissions, selectSignedInUser, viewAs } from '@/store/sessionSlice';
 import { NAV_ITEMS } from './navigation';
+import { ScrollManager } from './ScrollManager';
 import styles from './AppShell.module.css';
+
+function AboutLink({ onNavigate }: { onNavigate?: () => void }) {
+  const { t } = useTranslation('nav');
+  return (
+    <Link to="/info" className={styles.navLink} onClick={onNavigate}>
+      <Info aria-hidden="true" />
+      <span className={styles.navLabel}>{t('about')}</span>
+    </Link>
+  );
+}
 
 function SettingsTab() {
   const { t } = useTranslation('nav');
@@ -92,6 +103,7 @@ export function AppShell() {
 
   return (
     <div className="l-shell">
+      <ScrollManager />
       <a href="#main" className={styles.skip}>
         {t('skipToContent')}
       </a>
@@ -99,7 +111,10 @@ export function AppShell() {
       <aside className={`l-shell__sidebar ${styles.sidebar}`}>
         <Brand />
         <NavList />
-        <SettingsTab />
+        <div className={styles.sidebarFooter}>
+          <AboutLink />
+          <SettingsTab />
+        </div>
       </aside>
 
       <header className={`l-shell__header ${styles.header}`}>
@@ -161,7 +176,10 @@ export function AppShell() {
           <NavList onNavigate={() => setMenuOpen(false)} />
           <hr />
           <AccountPanel onDone={() => setMenuOpen(false)} />
-          <SettingsTab />
+          <div className={styles.sidebarFooter}>
+            <AboutLink onNavigate={() => setMenuOpen(false)} />
+            <SettingsTab />
+          </div>
         </div>
       </Dialog>
 

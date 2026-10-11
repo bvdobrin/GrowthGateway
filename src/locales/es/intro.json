@@ -1,0 +1,25 @@
+{
+  "pageTitle": "Acerca de",
+  "signIn": "Iniciar sesión",
+  "enter": "Volver al panel",
+  "slides": {
+    "one": {
+      "kicker": "Una puerta de enlace",
+      "title": "Todos los activos regionales, una biblioteca",
+      "body": "GrowthGateway reúne los informes, campañas, notas de prensa y archivos de marca que quedaron en sistemas distintos tras cada adquisición. Una búsqueda, en lugar de recorrer regiones.",
+      "caption": "Una biblioteca"
+    },
+    "two": {
+      "kicker": "El acceso correcto",
+      "title": "Solo ves lo que puedes usar",
+      "body": "Tus grupos de acceso y tu nivel de confidencialidad definen la biblioteca. Los archivos compartidos, regionales y comunes siguen en un solo lugar, y el asistente solo cita lo que puedes abrir.",
+      "caption": "Según permisos"
+    },
+    "three": {
+      "kicker": "Crear y aprobar",
+      "title": "Crea el siguiente activo y revísalo",
+      "body": "Parte de algo que ya tienes — una fotografía nueva, un diseño redimensionado, una versión localizada — valídalo y envíalo por una sola cola de aprobación.",
+      "caption": "Generar y aprobar"
+    }
+  }
+}

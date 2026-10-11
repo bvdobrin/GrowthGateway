@@ -8,7 +8,7 @@ import type { Permission } from '@/types';
 export function ProtectedRoute({ children }: { children: ReactNode }) {
   const authenticated = useAppSelector(selectIsAuthenticated);
   const location = useLocation();
-  if (!authenticated) return <Navigate to="/login" replace state={{ from: `${location.pathname}${location.search}` }} />;
+  if (!authenticated) return <Navigate to="/info" replace state={{ from: `${location.pathname}${location.search}` }} />;
   return <>{children}</>;
 }
 

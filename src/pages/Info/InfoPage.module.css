@@ -1,0 +1,93 @@
+@layer components {
+  .page {
+    position: relative;
+    block-size: 100dvh;
+    overflow: hidden;
+    background: #061018;
+    color: #f4f7fb;
+  }
+
+  .stage {
+    position: absolute;
+    inset: 0;
+  }
+
+  .top {
+    position: absolute;
+    z-index: 4;
+    inset-block-start: 0;
+    inset-inline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    pointer-events: none;
+
+    & :where(a, button, select, details) {
+      pointer-events: auto;
+    }
+  }
+
+  .brand {
+    margin: 0;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.01em;
+    line-height: var(--font-line-height-tight);
+  }
+
+  .copy {
+    position: absolute;
+    z-index: 4;
+    inset-block-start: 6.5rem;
+    inset-inline: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    inline-size: min(36rem, calc(100% - 2 * var(--space-4)));
+    margin-inline: auto;
+    padding: var(--space-5);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius-lg);
+    background: rgba(6, 16, 24, 0.38);
+    backdrop-filter: blur(12px);
+    pointer-events: none;
+
+    & h1 {
+      margin: 0;
+      font-size: var(--font-size-2xl);
+      line-height: var(--font-line-height-tight);
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    & a {
+      pointer-events: auto;
+      margin-left: auto;
+    }
+  }
+
+  .credit {
+    position: absolute;
+    z-index: 4;
+    right: var(--space-5);
+    bottom: var(--space-4);
+    margin: 0;
+    color: #fff;
+    font-size: var(--font-size-sm);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+  }
+
+  .kicker {
+    color: #e8c45c;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}

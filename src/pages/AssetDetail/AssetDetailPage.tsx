@@ -11,6 +11,7 @@ import { Card, EmptyState, Spinner } from '@/components/PageHeader/PageHeader';
 import { Popover } from '@/components/Popover/Popover';
 import { AssetPreview } from '@/components/Previewer/AssetPreview';
 import { ValidationReport } from '@/components/ValidationReport/ValidationReport';
+import { libraryReturnTo } from '@/app/ScrollManager';
 import { useDocumentTitle, useToast } from '@/hooks/useAppHelpers';
 import { useFormatters } from '@/hooks/useFormatters';
 import { useTaxonomy } from '@/hooks/useTaxonomy';
@@ -68,7 +69,7 @@ export function AssetDetailPage() {
         <EmptyState
           icon={<FileSearch />}
           title={t('common:errors.notFoundOrNoAccess')}
-          action={<ButtonLink to="/assets" icon={<ArrowLeft className="u-flip-rtl" />}>{t('detail.back')}</ButtonLink>}
+          action={<ButtonLink to={libraryReturnTo()} icon={<ArrowLeft className="u-flip-rtl" />}>{t('detail.back')}</ButtonLink>}
         />
       </div>
     );
@@ -120,7 +121,7 @@ export function AssetDetailPage() {
     try {
       const removed = await remove(asset.id).unwrap();
       toast.success(t('common:toast.deleted', { title: removed.title }));
-      navigate('/assets');
+      navigate(libraryReturnTo());
     } catch (error) {
       toast.error(error);
     }
@@ -132,7 +133,7 @@ export function AssetDetailPage() {
 
   return (
     <div className="l-page">
-      <Link to="/assets" className={styles.back}>
+      <Link to={libraryReturnTo()} className={styles.back}>
         <ArrowLeft aria-hidden="true" className="u-flip-rtl" />
         {t('detail.back')}
       </Link>

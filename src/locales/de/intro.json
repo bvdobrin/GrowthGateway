@@ -1,0 +1,25 @@
+{
+  "pageTitle": "Überblick",
+  "signIn": "Anmelden",
+  "enter": "Zurück zur Übersicht",
+  "slides": {
+    "one": {
+      "kicker": "Ein Zugang",
+      "title": "Alle regionalen Inhalte, eine Bibliothek",
+      "body": "GrowthGateway bündelt Berichte, Kampagnen, Presse- und Markendateien, die nach jeder Übernahme in getrennten Systemen lagen. Einmal suchen, statt regional zu stöbern.",
+      "caption": "Eine Bibliothek"
+    },
+    "two": {
+      "kicker": "Der passende Zugriff",
+      "title": "Sie sehen nur, was Sie nutzen dürfen",
+      "body": "Anmeldegruppen und Freigabestufe bestimmen die Bibliothek. Gemeinsame, regionale und allgemeine Dateien bleiben an einem Ort, und der Assistent nennt nur, was Sie öffnen dürfen.",
+      "caption": "Rechtebewusst"
+    },
+    "three": {
+      "kicker": "Erstellen und freigeben",
+      "title": "Das nächste Asset erstellen und prüfen",
+      "body": "Starten Sie mit etwas Vorhandenem — ein neues Foto, ein angepasstes Layout, eine lokalisierte Fassung — prüfen Sie es und schicken Sie es durch eine Freigabe.",
+      "caption": "Erzeugen und freigeben"
+    }
+  }
+}

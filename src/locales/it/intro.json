@@ -1,0 +1,25 @@
+{
+  "pageTitle": "Informazioni",
+  "signIn": "Accedi",
+  "enter": "Torna alla panoramica",
+  "slides": {
+    "one": {
+      "kicker": "Un unico accesso",
+      "title": "Tutti i contenuti regionali, una biblioteca",
+      "body": "GrowthGateway riunisce report, campagne, comunicati e file di brand rimasti in sistemi separati dopo ogni acquisizione. Una ricerca, invece di cercarli regione per regione.",
+      "caption": "Una biblioteca"
+    },
+    "two": {
+      "kicker": "L'accesso giusto",
+      "title": "Vedi solo ciò che puoi usare",
+      "body": "I gruppi di accesso e il livello di riservatezza definiscono la biblioteca. File condivisi, regionali e comuni restano in un unico posto, e l'assistente cita solo ciò che puoi aprire.",
+      "caption": "In base ai permessi"
+    },
+    "three": {
+      "kicker": "Crea e approva",
+      "title": "Crea il contenuto successivo e verificalo",
+      "body": "Parti da qualcosa che hai già — una nuova fotografia, un layout ridimensionato, una versione localizzata — convalida e invialo a un'unica coda di approvazione.",
+      "caption": "Genera e approva"
+    }
+  }
+}

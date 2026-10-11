@@ -7,6 +7,7 @@ import { DashboardPage } from '@/pages/Dashboard/DashboardPage';
 import { NotFoundPage } from '@/pages/Errors/ErrorPages';
 import { GeneratePage } from '@/pages/Generate/GeneratePage';
 import { LibraryPage } from '@/pages/Library/LibraryPage';
+import { InfoPage } from '@/pages/Info/InfoPage';
 import { LoginPage } from '@/pages/Login/LoginPage';
 import { TaxonomyPage } from '@/pages/Taxonomy/TaxonomyPage';
 import { AppShell } from './AppShell';
@@ -15,6 +16,7 @@ import { ProtectedRoute, RequirePermission } from './guards';
 export function AppRoutes() {
   return (
     <Routes>
+      <Route path="/info" element={<InfoPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route
         element={

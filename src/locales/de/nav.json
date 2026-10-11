@@ -32,6 +32,7 @@
     "lightModern": "Hell modern",
     "darkModern": "Dunkel modern"
   },
+  "about": "Überblick",
   "settings": "Einstellungen",
   "demo": "Demo: SSO, IAM und alle Backends sind simuliert."
 }

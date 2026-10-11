@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 export const SUPPORTED_LOCALES = ['en', 'fr', 'de', 'es', 'it', 'ar', 'ja'] as const;
 export type UiLocale = (typeof SUPPORTED_LOCALES)[number];
-export const NAMESPACES = ['common', 'nav', 'library', 'asset', 'validation', 'chat', 'taxonomy'] as const;
+export const NAMESPACES = ['common', 'nav', 'library', 'asset', 'validation', 'chat', 'taxonomy', 'intro'] as const;
 
 /** Endonyms shown in the language switcher. */
 export const LOCALE_NAMES: Record<UiLocale, string> = {

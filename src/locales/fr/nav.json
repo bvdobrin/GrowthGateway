@@ -32,6 +32,7 @@
     "lightModern": "Moderne clair",
     "darkModern": "Moderne sombre"
   },
+  "about": "À propos",
   "settings": "Réglages",
   "demo": "Démo : SSO, IAM et tous les services sont simulés."
 }

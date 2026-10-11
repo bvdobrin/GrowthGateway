@@ -32,6 +32,7 @@
     "lightModern": "ライトモダン",
     "darkModern": "ダークモダン"
   },
+  "about": "紹介",
   "settings": "設定",
   "demo": "デモ: SSO、IAM、すべてのバックエンドはモックです。"
 }

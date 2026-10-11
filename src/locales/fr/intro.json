@@ -1,0 +1,25 @@
+{
+  "pageTitle": "À propos",
+  "signIn": "Se connecter",
+  "enter": "Retour au tableau de bord",
+  "slides": {
+    "one": {
+      "kicker": "Une passerelle",
+      "title": "Tous les contenus régionaux, une médiathèque",
+      "body": "GrowthGateway rassemble les rapports, campagnes, communiqués et fichiers de marque dispersés dans des systèmes distincts après chaque acquisition. Une recherche, au lieu de chercher région par région.",
+      "caption": "Une médiathèque"
+    },
+    "two": {
+      "kicker": "Le bon accès",
+      "title": "Vous ne voyez que ce que vous pouvez utiliser",
+      "body": "Vos groupes de connexion et votre niveau d'habilitation définissent la médiathèque. Fichiers partagés, régionaux et communs restent au même endroit, et l'assistant ne cite que ce que vous pouvez ouvrir.",
+      "caption": "Selon les droits"
+    },
+    "three": {
+      "kicker": "Créer et valider",
+      "title": "Produire le contenu suivant, puis le vérifier",
+      "body": "Partez d'un contenu existant — une nouvelle photographie, une mise en page redimensionnée, une version localisée — puis validez-le et envoyez-le dans une seule file d'approbation.",
+      "caption": "Générer et approuver"
+    }
+  }
+}

@@ -65,6 +65,8 @@
     "migrated": "移行済み",
     "acquired": "{{company}} から",
     "categories": "種類別に見る",
+    "typeCount_one": "アセットタイプ {{count}} 件",
+    "typeCount_other": "アセットタイプ {{count}} 件",
     "expiringSoon": "まもなく失効する使用権",
     "noneExpiring": "今後 45 日以内に失効する使用権はありません。",
     "quickActions": "クイック操作",

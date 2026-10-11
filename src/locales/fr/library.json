@@ -67,6 +67,8 @@
     "migrated": "Migrés",
     "acquired": "Issu de {{company}}",
     "categories": "Parcourir par type",
+    "typeCount_one": "{{count}} type d'actif",
+    "typeCount_other": "{{count}} types d'actifs",
     "expiringSoon": "Droits d'utilisation bientôt expirés",
     "noneExpiring": "Aucun droit d'utilisation n'expire dans les 45 prochains jours.",
     "quickActions": "Actions rapides",

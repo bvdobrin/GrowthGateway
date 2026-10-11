@@ -1,12 +1,14 @@
-import { useState } from 'react';
-import { Bot, ChevronDown, Info, Menu, Settings, UserRoundCog } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowLeft, Bot, ChevronDown, Info, Menu, Settings, UserRoundCog } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Button } from '@/components/Button/Button';
+import { Link, Outlet, useLocation, useMatch } from 'react-router-dom';
+import { libraryReturnTo } from '@/app/ScrollManager';
+import { Button, ButtonLink } from '@/components/Button/Button';
 import { ChatDrawer } from '@/components/ChatDrawer/ChatDrawer';
 import { Dialog } from '@/components/Dialog/Dialog';
 import { AccountPanel, Avatar, LanguageSwitcher, ThemeSwitcher } from '@/components/Identity/Identity';
 import { Popover } from '@/components/Popover/Popover';
+import SideRays from '@/components/SideRays/SideRays';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { selectChat, toggleChat } from '@/store/chatSlice';
@@ -15,6 +17,37 @@ import { selectCurrentUser, selectPermissions, selectSignedInUser, viewAs } from
 import { NAV_ITEMS } from './navigation';
 import { ScrollManager } from './ScrollManager';
 import styles from './AppShell.module.css';
+
+function PageSideRays() {
+  const light = useAppSelector((state) => state.ui.theme) === 'light';
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    if (!query) return undefined;
+    const update = () => setReducedMotion(query.matches);
+    update();
+    query.addEventListener?.('change', update);
+    return () => query.removeEventListener?.('change', update);
+  }, []);
+
+  return (
+    <SideRays
+      className="side-rays-background"
+      speed={reducedMotion ? 0 : 2.5}
+      rayColor1={light ? '#3b82f6' : '#6ea0ff'}
+      rayColor2={light ? '#22d3ee' : '#96c8ff'}
+      intensity={light ? 1.7 : 1.6}
+      spread={2}
+      origin="top-right"
+      saturation={1.5}
+      blend={0.55}
+      falloff={light ? 2.1 : 1.6}
+      opacity={1}
+      lightBackdrop={light}
+    />
+  );
+}
 
 function AboutLink({ onNavigate }: { onNavigate?: () => void }) {
   const { t } = useTranslation('nav');
@@ -46,7 +79,7 @@ function Brand() {
   const { t } = useTranslation('nav');
   return (
     <Link to="/" className={styles.brand}>
-      <img src="/favicon.svg" alt="" width={28} height={28} />
+      <img src="/favicon.svg" alt="" width={48} height={48} />
       <span className={styles.brandText}>
         <span className={styles.brandName}>{t('appName')}</span>
         <span className={styles.brandTagline}>{t('tagline')}</span>
@@ -93,8 +126,16 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
 }
 
 export function AppShell() {
-  const { t } = useTranslation('nav');
+  const { t } = useTranslation(['nav', 'asset']);
   const dispatch = useAppDispatch();
+  const assetMatch = useMatch('/assets/:id');
+  const onAssetDetail = Boolean(assetMatch && assetMatch.params.id !== 'new');
+  const onLibrary = useMatch({ path: '/assets', end: true });
+  const onAddAsset = useMatch('/assets/new');
+  const onApprovals = useMatch('/approvals');
+  const onAudit = useMatch('/audit');
+  const onTaxonomy = useMatch('/admin/taxonomy');
+  const sideRays = Boolean(onLibrary || onAddAsset || assetMatch || onApprovals || onAudit || onTaxonomy);
   const [menuOpen, setMenuOpen] = useState(false);
   const user = useAppSelector(selectCurrentUser);
   const signedIn = useAppSelector(selectSignedInUser);
@@ -121,6 +162,17 @@ export function AppShell() {
         <Button className="u-hide-from-lg" variant="ghost" iconOnly icon={<Menu />} onClick={() => setMenuOpen(true)} aria-expanded={menuOpen}>
           {t('menu')}
         </Button>
+        {onAssetDetail && (
+          <ButtonLink
+            to={libraryReturnTo()}
+            className={styles.back}
+            variant="secondary"
+            icon={<ArrowLeft className="u-flip-rtl" />}
+            aria-label={t('asset:detail.back')}
+          >
+            <span className={styles.backLabel}>{t('asset:detail.back')}</span>
+          </ButtonLink>
+        )}
         <div className={`u-hide-from-lg ${styles.headerBrand}`}>
           <Brand />
         </div>
@@ -168,7 +220,10 @@ export function AppShell() {
       </header>
 
       <main id="main" className="l-shell__main" tabIndex={-1}>
-        <Outlet />
+        {sideRays && <PageSideRays />}
+        <div className={sideRays ? styles.raysForeground : undefined}>
+          <Outlet />
+        </div>
       </main>
 
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)} title={t('appName')} variant="sheetStart">

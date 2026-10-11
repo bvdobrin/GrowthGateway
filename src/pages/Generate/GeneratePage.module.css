@@ -1,33 +1,67 @@
 @layer components {
+  .stage {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    block-size: calc(100dvh - var(--size-header));
+    overflow: hidden;
+  }
+
+  .aurora {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .auroraBand {
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    block-size: 50%;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent, #000 42%);
+  }
+
+  .foreground {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-block-size: 0;
+    overflow: hidden;
+    padding-block-end: var(--space-4);
+  }
+
   .layout {
     display: grid;
+    flex: 1;
     gap: var(--space-4);
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    min-block-size: 0;
 
     @media (--bp-lg) {
       grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr);
-      align-items: start;
+      grid-template-rows: minmax(0, 1fr);
     }
   }
 
   .picker {
-    @media (--bp-lg) {
-      position: sticky;
-      inset-block-start: calc(var(--size-header) + var(--space-4));
-    }
+    min-block-size: 0;
+    overflow: hidden;
   }
 
   .assetList {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 2px;
-    max-block-size: 18rem;
+    min-block-size: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
-
-    @media (--bp-lg) {
-      max-block-size: calc(100dvh - var(--size-header) - 14rem);
-    }
   }
 
   .assetOption {
@@ -63,6 +97,9 @@
     flex-direction: column;
     gap: var(--space-4);
     min-inline-size: 0;
+    min-block-size: 0;
+    overflow: auto;
+    overscroll-behavior: contain;
   }
 
   .summary {

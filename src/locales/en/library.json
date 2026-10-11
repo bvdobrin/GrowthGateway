@@ -67,6 +67,8 @@
     "migrated": "Migrated",
     "acquired": "From {{company}}",
     "categories": "Browse by type",
+    "typeCount_one": "{{count}} asset type",
+    "typeCount_other": "{{count}} asset types",
     "expiringSoon": "Usage rights expiring soon",
     "noneExpiring": "No usage rights expire in the next 45 days.",
     "quickActions": "Quick actions",

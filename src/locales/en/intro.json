@@ -6,19 +6,19 @@
     "one": {
       "kicker": "One gateway",
       "title": "Every regional asset, one library",
-      "body": "GrowthGateway gathers the reports, campaigns, press, and brand files that used to live in separate systems after each acquisition. Search once, instead of hunting across regions.",
+      "body": "GrowthGateway gathers the reports, campaigns, press, and brand files that used to live in separate systems after each company acquisition. Search once, instead of hunting across regions.",
       "caption": "One library"
     },
     "two": {
       "kicker": "The right access",
-      "title": "You only see what you can use",
-      "body": "Your sign-in groups and clearance decide the library. Shared files, regional files, and common files stay in one place, and the assistant only cites what you are allowed to open.",
+      "title": "Browse with confidence",
+      "body": "Your IAM groups and clearance decide what you can see and touch. The assistant only cites what you are allowed to open.",
       "caption": "Permission-aware"
     },
     "three": {
       "kicker": "Create and approve",
       "title": "Make the next asset, then check it",
-      "body": "Start from something you already have — a new photograph, a resized layout, a localized version — then validate it and send it through one approval queue.",
+      "body": "Start from something you already have - a new photograph, a resized layout, a localized version - then validate it and send it for approval.",
       "caption": "Generate and approve"
     }
   }

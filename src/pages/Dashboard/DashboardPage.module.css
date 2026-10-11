@@ -27,7 +27,7 @@
     padding: var(--space-4);
     border: var(--border-width-thin) solid var(--color-border-default);
     border-radius: var(--radius-lg);
-    background: var(--color-surface-base);
+    background: color-mix(in oklch, var(--color-surface-base) 82%, transparent);
 
     & svg {
       grid-area: icon;
@@ -54,6 +54,11 @@
     grid-area: label;
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
+  }
+
+  .sources.sources,
+  .expiring.expiring {
+    background: color-mix(in oklch, var(--color-surface-base) 82%, transparent);
   }
 
   .grid {
@@ -182,59 +187,17 @@
     gap: var(--space-2);
   }
 
-  .group {
+  .folders {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-  }
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--space-8) var(--space-6);
+    padding-block-start: var(--space-2);
 
-  .groupTitle {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--color-text-subtle);
-  }
-
-  /* One column, then two, then a wider grid. */
-  .tiles {
-    display: grid;
-    gap: var(--space-2);
-    grid-template-columns: minmax(0, 1fr);
-
-    @media (--bp-sm) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    @media (--bp-lg) {
-      grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    }
-  }
-
-  .tile {
-    --tile-color: var(--color-accent-default);
-
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    min-block-size: var(--size-touch);
-    padding: var(--space-3);
-    border: var(--border-width-thin) solid var(--color-border-default);
-    border-inline-start: 4px solid var(--tile-color);
-    border-radius: var(--radius-md);
-    background: var(--color-surface-base);
-    color: var(--color-text-default);
-    text-decoration: none;
-
-    & svg {
-      inline-size: 1.2rem;
-      block-size: 1.2rem;
-      flex-shrink: 0;
-      color: var(--tile-color);
-    }
-
-    &:hover {
-      background: color-mix(in oklch, var(--tile-color) 8%, var(--color-surface-base));
+    @media (--bp-xl) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 
@@ -245,6 +208,7 @@
   }
 
   .tileCount {
+    flex-shrink: 0;
     font-size: var(--font-size-sm);
     font-variant-numeric: tabular-nums;
     color: var(--color-text-muted);

@@ -1,9 +1,10 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import { CalendarClock, Database, Layers, ShieldCheck, Sparkles, Upload } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AssetCard } from '@/components/AssetCard/AssetCard';
 import { ButtonLink } from '@/components/Button/Button';
+import FolderFloat from '@/components/FolderFloat/FolderFloat';
 import { Icon } from '@/components/Icon/Icon';
 import LightRays from '@/components/LightRays/LightRays';
 import { Card, PageHeader, Spinner } from '@/components/PageHeader/PageHeader';
@@ -55,8 +56,10 @@ function DashboardRays() {
 
 export function DashboardPage() {
   const { t } = useTranslation(['library', 'nav']);
+  const navigate = useNavigate();
   const user = useAppSelector(selectCurrentUser);
   const permissions = useAppSelector(selectPermissions);
+  const palette = useAppSelector((state) => state.ui.palette);
   const { data: stats, isLoading } = useGetDashboardStatsQuery();
   const { data: assets } = useListAssetsQuery();
   const { categories, categoryLabel, groupLabel } = useTaxonomy();
@@ -173,30 +176,45 @@ export function DashboardPage() {
 
         <section className={styles.section} aria-labelledby="types-heading">
           <h2 id="types-heading">{t('dashboard.categories')}</h2>
-          {CATEGORY_GROUPS.map((group) => {
-            const groupCategories = categories.filter((c) => c.group === group);
-            if (!groupCategories.length) return null;
-            return (
-              <div key={group} className={styles.group}>
-                <h3 className={styles.groupTitle}>{groupLabel(group)}</h3>
-                <ul role="list" className={styles.tiles}>
-                  {groupCategories.map((category) => (
-                    <li key={category.id}>
-                      <Link
-                        to={`/assets?category=${category.id}`}
-                        className={styles.tile}
-                        style={{ '--tile-color': `var(--${category.colorToken})` } as CSSProperties}
-                      >
+          <div className={styles.folders}>
+            {CATEGORY_GROUPS.map((group) => {
+              const groupCategories = categories.filter((c) => c.group === group);
+              if (!groupCategories.length) return null;
+              return (
+                <FolderFloat
+                  key={group}
+                  className="folder-float--tiles"
+                  label={groupLabel(group)}
+                  sublabel={t('dashboard.typeCount', { count: groupCategories.length })}
+                  trigger="hover"
+                  closeOnSelect
+                  items={groupCategories.map((category) => ({
+                    label: categoryLabel(category),
+                    value: category.id,
+                    color: `var(--${category.colorToken})`,
+                    content: (
+                      <>
                         <Icon name={category.icon} />
                         <span className={styles.tileLabel}>{categoryLabel(category)}</span>
                         <span className={styles.tileCount}>{formatNumber(stats.byCategory[category.id] ?? 0)}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
+                      </>
+                    ),
+                  }))}
+                  onSelect={(id) => navigate(`/assets?category=${id}`)}
+                  folderColor="color-mix(in oklch, var(--color-accent-default) 70%, black)"
+                  frontColor="var(--color-accent-default)"
+                  itemColor="var(--color-surface-base)"
+                  itemTextColor="var(--color-text-default)"
+                  labelColor="var(--color-text-on-accent)"
+                  width={172}
+                  height={124}
+                  radius={palette === 'modern' ? 2 : 12}
+                  spread={200}
+                  lift={22}
+                />
+              );
+            })}
+          </div>
         </section>
 
         {assets && assets.length > 0 && (

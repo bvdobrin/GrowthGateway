@@ -133,11 +133,6 @@ export function AssetDetailPage() {
 
   return (
     <div className="l-page">
-      <Link to={libraryReturnTo()} className={styles.back}>
-        <ArrowLeft aria-hidden="true" className="u-flip-rtl" />
-        {t('detail.back')}
-      </Link>
-
       <header className={styles.header}>
         <div className={styles.badges}>
           <CategoryBadge categoryId={asset.category} />

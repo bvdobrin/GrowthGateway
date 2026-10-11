@@ -67,6 +67,8 @@
     "migrated": "Migrati",
     "acquired": "Da {{company}}",
     "categories": "Sfoglia per tipo",
+    "typeCount_one": "{{count}} tipo di contenuto",
+    "typeCount_other": "{{count}} tipi di contenuto",
     "expiringSoon": "Diritti d'uso in scadenza",
     "noneExpiring": "Nessun diritto d'uso scade nei prossimi 45 giorni.",
     "quickActions": "Azioni rapide",

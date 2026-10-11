@@ -6,6 +6,7 @@ export interface GleanChatRequest {
   /** UI locale for the answer's template text. Asset content is never translated. */
   locale: string;
   accessToken?: string;
+  signal?: AbortSignal;
 }
 
 export interface GleanChatResponse {

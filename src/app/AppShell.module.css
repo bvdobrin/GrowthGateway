@@ -168,6 +168,11 @@
     padding: var(--space-3);
   }
 
+  .raysForeground {
+    position: relative;
+    z-index: 1;
+  }
+
   .header {
     display: flex;
     align-items: center;
@@ -191,13 +196,21 @@
     flex: 1;
   }
 
-  .header .assistant {
+  .header .assistant,
+  .header .back {
     min-block-size: var(--size-control-sm);
     block-size: var(--size-control-sm);
+    flex-shrink: 0;
 
     @media (pointer: coarse) {
       min-block-size: var(--size-touch);
       block-size: var(--size-touch);
+    }
+  }
+
+  .backLabel {
+    @media (--bp-lg-below) {
+      display: none;
     }
   }
 

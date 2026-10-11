@@ -7,6 +7,7 @@ import { CategoryBadge, StatusBadge } from '@/components/Badge/Badge';
 import { Button } from '@/components/Button/Button';
 import { Icon } from '@/components/Icon/Icon';
 import { Card, EmptyState, PageHeader, Spinner } from '@/components/PageHeader/PageHeader';
+import { ThemedAurora } from '@/components/SoftAurora/ThemedAurora';
 import { generatorsFor, type GeneratorDefinition } from '@/config/taxonomy/generators';
 import { useDocumentTitle, useToast } from '@/hooks/useAppHelpers';
 import { useFormatters } from '@/hooks/useFormatters';
@@ -120,8 +121,14 @@ export function GeneratePage() {
   const allowed = selected ? canGenerate(user, selected) : false;
 
   return (
-    <div className="l-page">
-      <PageHeader title={t('generate.title')} subtitle={t('generate.subtitle')} />
+    <div className={styles.stage}>
+      <div className={styles.aurora} aria-hidden="true">
+        <div className={styles.auroraBand}>
+          <ThemedAurora />
+        </div>
+      </div>
+      <div className={`l-page ${styles.foreground}`}>
+        <PageHeader title={t('generate.title')} subtitle={t('generate.subtitle')} />
       <div className={styles.layout}>
         <Card title={t('generate.pickAsset')} className={styles.picker}>
           <label className="u-visually-hidden" htmlFor="generate-filter">
@@ -183,6 +190,7 @@ export function GeneratePage() {
             </>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

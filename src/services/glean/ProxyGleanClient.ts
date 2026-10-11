@@ -13,7 +13,7 @@ export class ProxyGleanClient implements GleanClient {
 
   constructor(private readonly url: string) {}
 
-  async chat({ messages, user, locale, accessToken }: GleanChatRequest): Promise<GleanChatResponse> {
+  async chat({ messages, user, locale, accessToken, signal }: GleanChatRequest): Promise<GleanChatResponse> {
     const response = await fetch(this.url, {
       method: 'POST',
       headers: {
@@ -24,6 +24,7 @@ export class ProxyGleanClient implements GleanClient {
         locale,
         messages: messages.slice(-10).map(({ role, content }) => ({ role, content })),
       }),
+      signal,
     });
     if (!response.ok) throw new ServiceError('upstream', `Assistant proxy returned ${response.status}`);
     const body = (await response.json()) as GleanChatResponse;

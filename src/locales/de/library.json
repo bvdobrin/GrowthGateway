@@ -67,6 +67,8 @@
     "migrated": "Übernommen",
     "acquired": "Von {{company}}",
     "categories": "Nach Typ stöbern",
+    "typeCount_one": "{{count}} Asset-Typ",
+    "typeCount_other": "{{count}} Asset-Typen",
     "expiringSoon": "Nutzungsrechte laufen bald ab",
     "noneExpiring": "In den nächsten 45 Tagen laufen keine Nutzungsrechte ab.",
     "quickActions": "Schnellaktionen",

@@ -1,24 +1,4 @@
 @layer components {
-  .back {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-1);
-    min-block-size: var(--size-touch);
-    margin-block-end: var(--space-2);
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    text-decoration: none;
-
-    & svg {
-      inline-size: 1rem;
-      block-size: 1rem;
-    }
-
-    &:hover {
-      color: var(--color-text-default);
-    }
-  }
-
   .header {
     display: flex;
     flex-direction: column;

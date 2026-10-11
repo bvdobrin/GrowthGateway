@@ -1,1 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#1f5fae"/><path d="M9 21V11h7a5 5 0 0 1 0 10h-3m0 0 4 4m-4-4 4-4" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="512" height="512" rx="108" fill="#1f5faf"/>
+
+  <!-- ==================== CRANE (TOP) ==================== -->
+  <!-- Boom horizontal base rail -->
+  <rect x="100" y="138" width="312" height="12" rx="2" fill="#ffffff"/>
+
+  <!-- Cab / A-Frame Tower (Left) -->
+  <path d="M 118 144 L 168 82 L 224 144 Z" fill="none" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Mast & A-Frame Internal Bracing -->
+  <line x1="168" y1="84" x2="168" y2="144" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <line x1="118" y1="144" x2="168" y2="114" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Boom Top Rail & Nose Chamfer -->
+  <path d="M 224 110 H 372 L 412 144" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Boom Truss Diagonals -->
+  <path d="M 224 144 L 243 110 L 262 144 L 281 110 L 300 144 L 319 110 L 338 144 L 356 110 L 374 144" 
+        fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Hoist Cable, Pulley Block & Hook -->
+  <line x1="394" y1="144" x2="394" y2="173" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="383,173 405,173 401,189 387,189" fill="#ffffff"/>
+  <path d="M 394 189 V 196 C 394 203 388 206 384 206 C 379 206 379 214 383 217 C 388 220 402 220 402 209 C 402 202 396 200 393 204" 
+        fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ==================== G BODY & STORAGE / SERVERS (LEFT) ==================== -->
+  <!-- Upper G Arch connecting crane to server stack -->
+  <path d="M 100 144 H 224 C 218 168 198 188 178 200 H 100 Z" fill="#ffffff"/>
+
+  <!-- Server Blades Stack (3 Units) -->
+  <g id="servers">
+    <!-- Server 1 -->
+    <rect x="100" y="200" width="105" height="26" rx="6" fill="#ffffff"/>
+    <circle cx="117" cy="213" r="5.5" fill="#1f5faf"/>
+    <rect x="138" y="208" width="54" height="10" rx="5" fill="#1f5faf"/>
+
+    <!-- Server 2 -->
+    <rect x="100" y="240" width="105" height="26" rx="6" fill="#ffffff"/>
+    <circle cx="117" cy="253" r="5.5" fill="#1f5faf"/>
+    <rect x="138" y="248" width="54" height="10" rx="5" fill="#1f5faf"/>
+
+    <!-- Server 3 -->
+    <rect x="100" y="280" width="105" height="26" rx="6" fill="#ffffff"/>
+    <circle cx="117" cy="293" r="5.5" fill="#1f5faf"/>
+    <rect x="138" y="288" width="54" height="10" rx="5" fill="#1f5faf"/>
+  </g>
+
+  <!-- Bottom-Left Outer Crescent Loop -->
+  <path d="M 116 306 
+           C 116 352 136 388 184 394 
+           C 214 397 236 386 236 368 
+           C 202 376 172 355 172 306 Z" 
+        fill="#ffffff"/>
+
+  <!-- ==================== GROWTH ARROW (CENTER) ==================== -->
+  <!-- Sweeping base tail curving into the vertical growth arrow -->
+  <path d="M 282 242 
+           L 334 310 
+           H 308 
+           C 308 360 298 395 272 426 
+           C 220 435 174 415 140 378 
+           C 188 396 236 388 256 310 
+           H 230 
+           Z" 
+        fill="#ffffff"/>
+
+  <!-- ==================== GATEWAY PORTAL TERMINAL (RIGHT) ==================== -->
+  <!-- Right stem of the G featuring the architectural doorway portal -->
+  <path d="M 304 242 
+           H 412 
+           V 385 
+           C 412 416 360 432 272 432 
+           C 310 412 328 385 330 355 
+           H 348 
+           V 295 
+           H 326 
+           C 318 276 310 258 304 242 
+           Z" 
+        fill="#ffffff"/>
+</svg>

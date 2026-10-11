@@ -75,6 +75,8 @@
     "migrated": "مرحّلة",
     "acquired": "من {{company}}",
     "categories": "التصفح حسب النوع",
+    "typeCount_one": "نوع أصل واحد",
+    "typeCount_other": "{{count}} أنواع أصول",
     "expiringSoon": "حقوق استخدام تنتهي قريبًا",
     "noneExpiring": "لا تنتهي أي حقوق استخدام خلال الأيام الـ45 القادمة.",
     "quickActions": "إجراءات سريعة",

@@ -18,7 +18,7 @@ type ChatRoot = { chat: ChatState; session: SessionState; ui: UiState };
 
 export const askAssistant = createAsyncThunk<GleanChatResponse, string, { state: ChatRoot }>(
   'chat/ask',
-  async (text, { getState, requestId }) => {
+  async (text, { getState, requestId, signal }) => {
     const state = getState();
     const user = selectCurrentUser(state);
     if (!user) throw new Error('Not signed in');
@@ -28,6 +28,7 @@ export const askAssistant = createAsyncThunk<GleanChatResponse, string, { state:
       user,
       locale: state.ui.locale,
       accessToken: state.session.session?.accessToken,
+      signal,
     });
   },
 );
@@ -68,6 +69,7 @@ const chatSlice = createSlice({
       })
       .addCase(askAssistant.rejected, (state, action) => {
         state.pending = false;
+        if (action.meta.aborted) return;
         state.messages.push({
           id: `${action.meta.requestId}-a`,
           role: 'assistant',

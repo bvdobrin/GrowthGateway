@@ -51,7 +51,7 @@ export function InfoPage() {
 
       <header className={styles.top}>
         <p className={styles.brand}>GrowthGateway</p>
-        <LanguageSwitcher />
+        <LanguageSwitcher className={styles.language} />
       </header>
 
       <section className={styles.copy} aria-live="polite">

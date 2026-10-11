@@ -67,6 +67,8 @@
     "migrated": "Migrados",
     "acquired": "De {{company}}",
     "categories": "Explorar por tipo",
+    "typeCount_one": "{{count}} tipo de activo",
+    "typeCount_other": "{{count}} tipos de activo",
     "expiringSoon": "Derechos de uso que caducan pronto",
     "noneExpiring": "Ningún derecho de uso caduca en los próximos 45 días.",
     "quickActions": "Acciones rápidas",

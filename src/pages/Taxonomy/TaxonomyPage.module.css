@@ -13,7 +13,7 @@
   .globals {
     padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-md);
-    background: var(--color-surface-sunken);
+    background: var(--color-surface-base);
     font-size: var(--font-size-sm);
     line-height: var(--font-line-height-relaxed);
   }

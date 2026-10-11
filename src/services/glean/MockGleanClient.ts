@@ -195,8 +195,8 @@ export function parseQuery(query: string, categories: CategoryDefinition[], loca
 export class MockGleanClient implements GleanClient {
   readonly mode = 'mock' as const;
 
-  async chat({ messages, user, locale }: GleanChatRequest): Promise<GleanChatResponse> {
-    await delay(500, 600);
+  async chat({ messages, user, locale, signal }: GleanChatRequest): Promise<GleanChatResponse> {
+    await delay(500, 600, signal);
     const t = i18n.getFixedT(locale, 'chat');
     const question = [...messages].reverse().find((m) => m.role === 'user')?.content.trim() ?? '';
 

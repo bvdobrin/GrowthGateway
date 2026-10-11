@@ -1,6 +1,7 @@
 @layer components {
   /* Full-screen modal on small screens. */
   .drawer {
+    position: relative;
     inline-size: 100%;
     max-inline-size: 100%;
     block-size: 100dvh;
@@ -43,7 +44,20 @@
     }
   }
 
+  .aurora {
+    position: absolute;
+    z-index: 0;
+    inset-inline: 0;
+    inset-block-end: 60px;
+    block-size: 50%;
+    overflow: hidden;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, transparent, #000 42%);
+  }
+
   .header {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: var(--space-2);
@@ -83,6 +97,8 @@
   }
 
   .log {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
@@ -234,17 +250,10 @@
   }
 
   .composer {
-    display: flex;
-    align-items: flex-end;
-    gap: var(--space-2);
+    position: relative;
+    z-index: 1;
     padding: var(--space-3);
     padding-block-end: max(var(--space-3), env(safe-area-inset-bottom));
     border-block-start: var(--border-width-thin) solid var(--color-border-default);
-
-    & textarea {
-      min-block-size: var(--size-touch);
-      max-block-size: 9rem;
-      resize: none;
-    }
   }
 }
